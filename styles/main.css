@@ -182,7 +182,7 @@ figure.cmyk,
 .split-figure,
 .spotlight-figure {
   filter: none !important;
-  background: var(--color-surface) !important;
+  background: #ffffff !important;
   overflow: hidden;
   border-radius: var(--radius-md);
   box-shadow: 0 4px 20px rgba(14, 43, 76, 0.09);
@@ -203,9 +203,25 @@ figure.cmyk,
   width: 100%;
   height: auto;
   object-fit: contain;
-  background: var(--color-surface);
+  background: #ffffff !important;
   border-radius: var(--radius-md);
   margin: 0 auto;
+}
+
+/* Specific 1:1 Aspect Ratio Preserving for Square Product Architecture Infographics */
+#wellirecord .split-figure .print,
+.spotlight-figure .print {
+  aspect-ratio: 1 / 1 !important;
+  width: 100%;
+  display: block;
+}
+
+#wellirecord .split-figure img,
+.spotlight-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  aspect-ratio: 1 / 1;
 }
 
 .person .photo {
