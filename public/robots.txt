@@ -1,0 +1,5 @@
+# Wellinovate Robots Directive
+User-agent: *
+Allow: /
+
+Sitemap: https://wellinovate.github.io/wellinovatepro/sitemap.xml
