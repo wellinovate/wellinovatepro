@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solutions — Wellinovate | Empowering Better Health Decisions Through Innovation</title>
+  <meta name="description" content="Explore the eight interconnected products in Wellinovate's healthcare ecosystem. Empowering better health decisions through innovation.">
+  <link rel="stylesheet" href="./styles/main.css">
+  <style>
+    .kicker{display:block;font-size:13px;line-height:var(--half);letter-spacing:.08em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 70%,transparent);margin:0 0 calc(var(--leading) - var(--half))}
+    .pagehead{padding:calc(3 * var(--leading)) 0 calc(1.5 * var(--leading))}
+    .pagehead h1{font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:clamp(36px,5vw,58px);line-height:1.1;letter-spacing:-0.02em;margin:0}
+    .pagehead .sub{font-size:17px;line-height:var(--leading);max-width:var(--measure);margin:calc(var(--leading) - 0.5em) 0 0;color:color-mix(in srgb,var(--color-text) 78%,transparent)}
+    .split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--leading) clamp(24px,5vw,96px);align-items:center;padding:calc(1.5 * var(--leading)) 0 calc(2.5 * var(--leading));border-top:1px solid color-mix(in srgb,var(--color-text) 15%,transparent)}
+    @media (max-width:720px){.split{grid-template-columns:1fr}.split-figure{order:-1}}
+    .split-title{font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:32px;line-height:calc(1.5 * var(--leading));letter-spacing:-0.015em;margin:0}
+    .split-copy .note{font-size:15.5px;line-height:var(--leading);color:color-mix(in srgb,var(--color-text) 78%,transparent);margin:calc(var(--leading) - 0.5em) 0 0;max-width:48ch}
+    .split-feats{list-style:none;margin:calc(var(--leading) - var(--half)) 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+    .split-feats li{display:flex;align-items:baseline;gap:8px;font-size:14.5px;color:color-mix(in srgb,var(--color-text) 82%,transparent)}
+    .split-feats li::before{content:'—';color:var(--color-accent-700);flex:none}
+    .split-figure{margin:0}
+    .split-figure.cmyk{overflow:visible}
+    .split-figure .print{aspect-ratio:4/3}
+    .ecohead{padding:calc(2 * var(--leading)) 0 var(--leading);border-top:1px solid color-mix(in srgb,var(--color-text) 15%,transparent)}
+    .ecohead h2{font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:30px;line-height:calc(1.5 * var(--leading));letter-spacing:-0.015em;margin:0}
+    .ecogrid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-3);padding:0 0 calc(2.5 * var(--leading))}
+    @media (max-width:1020px){.ecogrid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:540px){.ecogrid{grid-template-columns:1fr}}
+    .ecogrid .card{min-height:160px;transition:transform 0.2s ease, box-shadow 0.2s ease}
+    .ecogrid .card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+    .ecogrid .card.outline{background:transparent;border:1px dashed color-mix(in srgb,var(--color-text) 30%,transparent)}
+    .card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-2)}
+    .card-head .card-num{font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:13px;color:color-mix(in srgb,var(--color-text) 40%,transparent);font-feature-settings:"pnum" 1}
+    .cta-strip{padding:calc(1.5 * var(--leading)) 0 calc(2.5 * var(--leading));border-top:1px solid color-mix(in srgb,var(--color-text) 15%,transparent);display:flex;justify-content:space-between;align-items:center;gap:var(--leading);flex-wrap:wrap}
+    .cta-strip h3{font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:23px;line-height:var(--leading);margin:0;max-width:32ch}
+    .sitefoot{padding:calc(3 * var(--leading)) 0 max(calc(1.5 * var(--leading)),calc(1.5 * var(--leading)) + env(safe-area-inset-bottom,0px))}
+    .sitefoot .rule-head{margin-bottom:calc(1.5 * var(--leading))}
+    .footgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--leading) clamp(24px,4vw,64px)}
+    @media (max-width:820px){.footgrid{grid-template-columns:1fr 1fr}}
+    @media (max-width:480px){.footgrid{grid-template-columns:1fr}}
+    .footgrid .brand-col p{font-size:14.5px;line-height:var(--leading);color:color-mix(in srgb,var(--color-text) 78%,transparent);max-width:32ch;margin:calc(var(--half) - 0.5em) 0 0}
+    .footgrid .brand-mark{font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:19px;margin:0}
+    .footcol h5{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 60%,transparent);margin:0 0 var(--half)}
+    .footcol ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+    .footcol a{font-size:14.5px;color:var(--color-text);text-decoration:none}
+    .footcol a:hover{color:var(--color-accent-700)}
+    .footbottom{margin-top:calc(2 * var(--leading));padding-top:var(--half);border-top:1px solid color-mix(in srgb,var(--color-text) 15%,transparent);display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--half);font-size:13px;color:color-mix(in srgb,var(--color-text) 65%,transparent)}
+    .footbottom a{color:inherit;text-decoration:none}
+    .footbottom a:hover{color:var(--color-accent-700)}
+    .social{display:flex;gap:8px;margin-top:var(--leading)}
+    .social a{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:var(--radius-sm,4px);color:var(--color-text)}
+    .social a:hover{color:var(--color-accent-700);background:var(--color-accent-100)}
+    .social a:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}
+    .social svg{width:18px;height:18px}
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="main-navigation">
+    <a href="/index.html" class="nav-brand" aria-label="Wellinovate Home">
+      <img src="/assets/wellinovate-logo-mark.png" alt="Wellinovate Emblem" class="nav-logo-mark" width="38" height="38">
+      <div class="nav-brand-text">
+        <span class="nav-brand-title"><span class="brand-well">Well</span><span class="brand-inovate">inovate</span></span>
+        <span class="nav-brand-tagline">Empowering Better Health Decisions</span>
+      </div>
+    </a>
+    <a href="/index.html">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/solutions.html" aria-current="page">Solutions</a>
+    <a href="/team.html">Team</a>
+    <a href="/process.html">Process &amp; Contact</a>
+    <a href="/process.html#contact" class="btn btn-primary" id="nav-cta-contact">Get in touch</a>
+  </nav>
+
+  <div class="wrap">
+    <main>
+      <section class="pagehead" data-screen-label="Solutions">
+        <span class="kicker">The ecosystem</span>
+        <h1>Eight products, one connected record.</h1>
+        <p class="sub">Every Wellinovate product reads and writes to the same patient record — so identity, care, diagnostics and payments move as one system instead of ten disconnected logins.</p>
+      </section>
+
+      <section class="split" id="wellirecord">
+        <div class="split-copy">
+          <span class="kicker">Flagship</span>
+          <h2 class="split-title">welliRecord</h2>
+          <p class="note">A patient-centered digital health record that follows the person, not the provider — every visit, result and prescription in one place, shareable with a consent, never a fax.</p>
+          <ul class="split-feats">
+            <li>One record, shared with consent across every connected provider</li>
+            <li>Structured history — visits, results and prescriptions in one timeline</li>
+            <li>Built on the same identity layer as the rest of the ecosystem</li>
+          </ul>
+        </div>
+        <figure class="split-figure cmyk">
+          <div class="print">
+            <img src="/assets/wellirecord-device.jpg" alt="welliRecord platform user interface on tablet" width="800" height="600" loading="eager">
+          </div>
+        </figure>
+      </section>
+
+      <section class="ecohead">
+        <span class="kicker">The rest of the ecosystem</span>
+        <h2>Seven more products, built the same way.</h2>
+      </section>
+
+      <div class="ecogrid">
+        <div class="card elev-sm" id="welliid">
+          <div class="card-head">
+            <span class="tag tag-accent">Identity</span>
+            <span class="card-num">02</span>
+          </div>
+          <h5 class="card-title">welliID</h5>
+          <p class="card-body">One verified, cryptographically-secure identity across every hospital, pharmacy, and clinic in the network.</p>
+        </div>
+        <div class="card elev-sm" id="wellicare">
+          <div class="card-head">
+            <span class="tag tag-accent-2">Care</span>
+            <span class="card-num">03</span>
+          </div>
+          <h5 class="card-title">WelliCare</h5>
+          <p class="card-body">Coordinated care plans shared in real time between specialists, general practitioners, and patients.</p>
+        </div>
+        <div class="card elev-sm" id="wellipharm">
+          <div class="card-head">
+            <span class="tag tag-neutral">Pharmacy</span>
+            <span class="card-num">04</span>
+          </div>
+          <h5 class="card-title">WelliPharm</h5>
+          <p class="card-body">Digital prescriptions, drug interaction checks, and medication fulfillment tracked end-to-end.</p>
+        </div>
+        <div class="card elev-sm" id="wellidiagnostic">
+          <div class="card-head">
+            <span class="tag tag-accent">Diagnostics</span>
+            <span class="card-num">05</span>
+          </div>
+          <h5 class="card-title">WelliDiagnostic</h5>
+          <p class="card-body">Direct-from-machine lab and imaging results routed to the patient's record the moment they're ready.</p>
+        </div>
+        <div class="card elev-sm" id="wellipay">
+          <div class="card-head">
+            <span class="tag tag-accent-2">Payments</span>
+            <span class="card-num">06</span>
+          </div>
+          <h5 class="card-title">WelliPay</h5>
+          <p class="card-body">Transparent billing, insurance pre-authorization, and claims reconciliation without the manual paperwork.</p>
+        </div>
+        <div class="card elev-sm" id="wellisight">
+          <div class="card-head">
+            <span class="tag tag-neutral">Insight</span>
+            <span class="card-num">07</span>
+          </div>
+          <h5 class="card-title">WellISight</h5>
+          <p class="card-body">Anonymized, population-level health analytics and epidemiology insights for providers and public health authorities.</p>
+        </div>
+        <div class="card elev-sm" id="wellimate">
+          <div class="card-head">
+            <span class="tag tag-accent">Assistant</span>
+            <span class="card-num">08</span>
+          </div>
+          <h5 class="card-title">WelliMate</h5>
+          <p class="card-body">A clinically-supervised conversational AI assistant that translates complex medical reports into clear, empathetic guidance.</p>
+        </div>
+        <div class="card elev-sm outline">
+          <div class="card-head">
+            <span class="tag tag-outline">In development</span>
+            <span class="card-num">09</span>
+          </div>
+          <h5 class="card-title">Next product</h5>
+          <p class="card-body">Built the same way — starting with an acute healthcare problem we've sat with alongside care workers.</p>
+        </div>
+      </div>
+
+      <div class="cta-strip">
+        <h3>See how these eight pieces come together, step by step.</h3>
+        <a href="/process.html" class="btn btn-secondary">Our process →</a>
+      </div>
+    </main>
+
+    <footer class="sitefoot">
+      <hr class="rule-head">
+      <div class="footgrid">
+        <div class="brand-col">
+          <div class="foot-logo-lockup">
+            <img src="/assets/wellinovate-logo-mark.png" alt="Wellinovate Emblem" class="foot-logo-mark" width="44" height="44">
+            <span class="foot-brand-title"><span class="brand-well">WELL</span><span class="brand-inovate">INOVATE</span></span>
+          </div>
+          <p class="foot-tagline"><strong>Empowering Better Health Decisions</strong> <span class="tagline-gold">Through Innovation.</span></p>
+          <p>Digital infrastructure for a connected healthcare system — records, identity, care and diagnostics, joined as one.</p>
+          <div class="social">
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 256 256" fill="currentColor"><path opacity="0.2" d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Z"/><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 256 256" fill="currentColor"><path opacity="0.2" d="M224,128a96,96,0,1,1-112-94.8V128h32V80h32v16a16,16,0,0,1-16,16H144v16h32Z"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm12,177.52V152h20a8,8,0,0,0,0-16H140V112a8,8,0,0,1,8-8h16a8,8,0,0,0,0-16H148a24,24,0,0,0-24,24v24H100a8,8,0,0,0,0,16h24v49.52a88,88,0,1,1,16,0Z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 256 256" fill="currentColor"><rect opacity="0.2" x="40" y="40" width="176" height="176" rx="44"/><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM172,24H84A60.07,60.07,0,0,0,24,84v88a60.07,60.07,0,0,0,60,60h88a60.07,60.07,0,0,0,60-60V84A60.07,60.07,0,0,0,172,24Zm44,148a44.05,44.05,0,0,1-44,44H84a44.05,44.05,0,0,1-44-44V84A44.05,44.05,0,0,1,84,40h88a44.05,44.05,0,0,1,44,44ZM196,76a12,12,0,1,1-12-12A12,12,0,0,1,196,76Z"/></svg></a>
+            <a href="#" aria-label="X"><svg viewBox="0 0 256 256" fill="currentColor"><path opacity="0.2" d="M223.75,215.49,167.6,132.94,222,72.16A8,8,0,0,0,210,60.24l-51.72,58.47L124.2,64.43A8,8,0,0,0,117.5,60H40.25a8,8,0,0,0-6.61,12.51L89.79,155.06,35.36,215.84A8,8,0,0,0,47.36,227.76L99.08,169.29,132.6,219.57a8,8,0,0,0,6.7,3.63h77.25A8,8,0,0,0,223.75,215.49Z"/><path d="M223.75,215.49,167.6,132.94,222,72.16A8,8,0,1,0,210,60.24l-51.72,58.47L124.2,64.43A8,8,0,0,0,117.5,60H40.25a8,8,0,0,0-6.61,12.51L89.79,155.06,35.36,215.84a8,8,0,1,0,12,10.92L99.08,169.29,132.6,219.57a8,8,0,0,0,6.7,3.63h77.25a8,8,0,0,0,7.2-11.71ZM122.14,206,50.25,76h17.5l71.9,130Zm60.36,0-108-158h20l108,158Z"/></svg></a>
+          </div>
+        </div>
+        <div class="footcol">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/team.html">Team</a></li>
+            <li><a href="/process.html">Process</a></li>
+          </ul>
+        </div>
+        <div class="footcol">
+          <h5>Ecosystem</h5>
+          <ul>
+            <li><a href="/solutions.html">Solutions</a></li>
+            <li><a href="/solutions.html#wellirecord">welliRecord</a></li>
+            <li><a href="/solutions.html#welliid">welliID</a></li>
+          </ul>
+        </div>
+        <div class="footcol">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@wellinovate.com">hello@wellinovate.com</a></li>
+            <li><a href="/process.html#contact">Get in touch</a></li>
+            <li>Lagos · London · Remote</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footbottom">
+        <span>© 2026 Wellinovate Ltd. All rights reserved.</span>
+        <span><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></span>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="./_ds/broadsheet-33e1abc0-c76e-4efe-9cc0-1407cbd4a61e/_ds_bundle.js"></script>
+</body>
+</html>

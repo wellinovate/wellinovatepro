@@ -1,0 +1,342 @@
+@import "../_ds/broadsheet-33e1abc0-c76e-4efe-9cc0-1407cbd4a61e/styles.css";
+
+/* Project-wide layout tokens and logo-aligned brand palette */
+:root {
+  --leading: 28px;
+  --half: 14px;
+  --edge: clamp(20px, 5vw, 72px);
+  --measure: 60ch;
+
+  /* Official Wellinovate Logo Color Palette */
+  --color-brand-teal: #008276;
+  --color-brand-navy: #0e2b4c;
+  --color-brand-gold: #eda822;
+
+  /* Enhanced Theme Overrides */
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-text: #0f2438;
+  --color-accent: #008276;
+  --color-accent-2: #eda822;
+  --color-divider: rgba(14, 43, 76, 0.12);
+
+  /* Teal Ramps */
+  --color-accent-100: #e6f7f5;
+  --color-accent-200: #c2ece6;
+  --color-accent-300: #8fdcd2;
+  --color-accent-400: #54c5b7;
+  --color-accent-500: #23aa9b;
+  --color-accent-600: #008276;
+  --color-accent-700: #026a60;
+  --color-accent-800: #04524b;
+  --color-accent-900: #063c37;
+
+  /* Radiant Gold / Amber Ramps */
+  --color-accent-2-100: #fef8e8;
+  --color-accent-2-200: #fdedc4;
+  --color-accent-2-300: #fcdd95;
+  --color-accent-2-400: #f8c95e;
+  --color-accent-2-500: #f3b432;
+  --color-accent-2-600: #eda822;
+  --color-accent-2-700: #c98714;
+  --color-accent-2-800: #9f6610;
+  --color-accent-2-900: #694008;
+
+  /* Neutral Slate / Deep Navy Ramps */
+  --color-neutral-100: #f1f5f9;
+  --color-neutral-200: #e2e8f0;
+  --color-neutral-300: #cbd5e1;
+  --color-neutral-400: #94a3b8;
+  --color-neutral-500: #64748b;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #1e293b;
+  --color-neutral-900: #0e2b4c;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  text-wrap: pretty;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--edge);
+}
+
+/* Site Navigation */
+.nav {
+  padding-inline: max(var(--edge), calc((100% - 1200px) / 2 + var(--edge)), env(safe-area-inset-left, 0px));
+  padding-top: max(10px, env(safe-area-inset-top, 0px));
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(248, 250, 252, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-divider);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.nav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.nav-logo-mark {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 4px rgba(0, 130, 118, 0.15));
+  transition: transform 0.2s ease;
+}
+
+.nav-brand:hover .nav-logo-mark {
+  transform: scale(1.05);
+}
+
+.nav-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.nav-brand-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.015em;
+}
+
+.brand-well {
+  color: var(--color-brand-teal);
+}
+
+.brand-inovate {
+  color: var(--color-brand-navy);
+}
+
+.nav-brand-tagline {
+  font-size: 9.5px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: var(--color-neutral-600);
+  text-transform: uppercase;
+  margin-top: 1px;
+}
+
+.nav a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.nav a:hover,
+.nav a[aria-current='page'] {
+  color: var(--color-accent-700);
+}
+
+.nav a[aria-current='page'] {
+  font-weight: 600;
+}
+
+.nav a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    padding-top: 12px;
+  }
+  .nav-brand {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  .nav a {
+    font-size: 13px;
+  }
+}
+
+/* CMYK Print Image & Figure Support */
+.cmyk .print img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius-sm);
+}
+
+.person .photo {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--color-surface);
+  border: 1px solid var(--color-divider);
+}
+
+.person .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.person:hover .photo img {
+  transform: scale(1.02);
+}
+
+/* Form interactive feedback */
+.form-success {
+  display: none;
+  padding: var(--space-3);
+  background: var(--color-accent-100);
+  border: 1px solid var(--color-accent-400);
+  border-radius: var(--radius-md);
+  color: var(--color-accent-900);
+  margin-bottom: var(--space-3);
+  font-size: 14.5px;
+}
+
+.form-success.active {
+  display: block;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Button styling with brand teal */
+.btn-primary {
+  background: var(--color-brand-teal);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 130, 118, 0.22);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-700);
+  box-shadow: 0 4px 14px rgba(0, 130, 118, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  border-color: var(--color-divider);
+  color: var(--color-brand-navy);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--color-accent-100);
+  border-color: var(--color-accent-300);
+  color: var(--color-brand-teal);
+}
+
+/* Footer Brand Lockup & Tagline */
+.foot-logo-lockup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.foot-logo-mark {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 5px rgba(0, 130, 118, 0.2));
+}
+
+.foot-brand-title {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.foot-tagline {
+  font-size: 14px;
+  line-height: 1.45;
+  margin: 8px 0 12px;
+  color: var(--color-brand-navy);
+}
+
+.foot-tagline strong {
+  color: var(--color-brand-teal);
+  font-weight: 600;
+}
+
+.tagline-gold {
+  color: var(--color-brand-gold);
+  font-weight: 600;
+}
+
+/* Brand Hero Pill / Badge */
+.brand-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 16px 6px 8px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-divider);
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 20px;
+}
+
+.brand-pill-img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.brand-pill-tagline {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-brand-navy);
+}
+
+.brand-pill-tagline .gold {
+  color: var(--color-brand-gold);
+}
+
+/* Card & Interactive Accents */
+.tag-accent {
+  background: var(--color-accent-100);
+  color: var(--color-accent-800);
+  font-weight: 500;
+}
+
+.tag-gold {
+  background: var(--color-accent-2-100);
+  color: var(--color-accent-2-800);
+  border: 1px solid var(--color-accent-2-300);
+  font-weight: 600;
+}
+

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#f0eee9">
+<svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+<rect width="120" height="80" fill="#f0eee9"/>
+<rect x="24" y="20" width="72" height="10" fill="#201e1d"/>
+<rect x="24" y="36" width="48" height="6" fill="#0088b0"/>
+<rect x="24" y="46" width="60" height="6" fill="#c9c7c5"/>
+<rect x="24" y="56" width="30" height="6" fill="#c9c7c5"/>
+</svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="_ds/broadsheet-33e1abc0-c76e-4efe-9cc0-1407cbd4a61e/styles.css">
+<style>
+body{margin:0;background:#f0eee9;font-family:system-ui,sans-serif}
+.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}
+.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}
+.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}
+.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}
+.dv-opts{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}
+.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}
+.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.55)}
+.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);overflow:hidden}
+.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}
+.dv-next{margin:22px 0 0;font:12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.5)}
+.wf-card{background:var(--color-bg);border:1px solid var(--color-neutral-300);padding:14px;font-family:var(--font-body);color:var(--color-text);box-sizing:border-box}
+.wf-nav{display:flex;justify-content:space-between;align-items:center;padding-bottom:8px;margin-bottom:10px;border-bottom:1px solid var(--color-neutral-300);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--color-neutral-700)}
+.wf-navitems{display:flex;gap:10px}
+.wf-box{border:1px dashed var(--color-neutral-400);background:var(--color-neutral-100);display:flex;align-items:center;justify-content:center;font-size:9px;color:var(--color-neutral-600);text-transform:uppercase;letter-spacing:.05em;text-align:center;padding:4px;box-sizing:border-box}
+.wf-line{background:var(--color-neutral-300);border-radius:1px}
+.wf-h{font-family:var(--font-heading);font-weight:600;line-height:1.15;color:var(--color-text)}
+.wf-btn{display:inline-block;background:var(--color-accent);color:#fff;font-size:9px;padding:5px 10px;text-transform:uppercase;letter-spacing:.04em;border-radius:2px}
+.wf-btn2{display:inline-block;border:1px solid var(--color-accent);color:var(--color-accent-700);font-size:9px;padding:5px 10px;text-transform:uppercase;letter-spacing:.04em;border-radius:2px}
+.wf-tag{display:inline-block;background:var(--color-accent-2-100);color:var(--color-accent-2-700);font-size:9px;padding:2px 6px;border-radius:2px}
+.wf-row{display:flex;gap:8px}
+.wf-col{display:flex;flex-direction:column;gap:8px}
+.wf-sec{padding-top:10px;border-top:1px solid var(--color-neutral-200);margin-top:10px}
+.wf-avatar{width:26px;height:26px;border-radius:50%;background:var(--color-neutral-200);border:1px dashed var(--color-neutral-400);flex:none}
+.wf-circle{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-family:var(--font-heading);font-weight:600;border:1px solid var(--color-accent);color:var(--color-accent-700);flex:none;box-sizing:border-box}
+.wf-bubble{background:var(--color-neutral-100);border:1px solid var(--color-neutral-300);border-radius:8px;padding:5px 8px;font-size:9px;max-width:75%}
+.wf-bubble.me{background:var(--color-accent-100);border-color:var(--color-accent-300);align-self:flex-end}
+</style>
+</helmet>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Homepage — 5 layout directions</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a"><div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Stacked editorial hero</div>
+<div class="dv-card wf-card" style="width:400px">
+<div class="wf-nav"><span>WELLINOVATE</span><div class="wf-navitems"><span>About</span><span>Solutions</span><span>Process</span><span>Contact</span></div></div>
+<div class="wf-box" style="height:130px;margin-bottom:10px">hero photo — clinicians + patients</div>
+<div class="wf-h" style="font-size:20px;margin-bottom:6px">HealthTech Innovation for a Connected Future</div>
+<div class="wf-line" style="height:7px;width:90%;margin-bottom:4px"></div>
+<div class="wf-line" style="height:7px;width:70%;margin-bottom:10px"></div>
+<div class="wf-row" style="margin-bottom:14px"><span class="wf-btn">Our Solutions</span><span class="wf-btn2">Contact Us</span></div>
+<div class="wf-sec">
+<div class="wf-line" style="height:8px;width:50%;margin-bottom:8px"></div>
+<div class="wf-row"><div class="wf-box" style="flex:1;height:50px">Digital Health</div><div class="wf-box" style="flex:1;height:50px">AI in Healthcare</div><div class="wf-box" style="flex:1;height:50px">Interoperability</div></div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1b"><div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Split hero, text-led</div>
+<div class="dv-card wf-card" style="width:400px">
+<div class="wf-nav"><span>WELLINOVATE</span><div class="wf-navitems"><span>About</span><span>Solutions</span><span>Process</span><span>Contact</span></div></div>
+<div class="wf-row" style="margin-bottom:14px">
+<div class="wf-col" style="flex:1.2">
+<div class="wf-h" style="font-size:17px">Turning Healthcare Challenges into Digital Solutions</div>
+<div class="wf-line" style="height:6px;width:95%"></div>
+<div class="wf-line" style="height:6px;width:80%"></div>
+<span class="wf-btn" style="width:fit-content">Explore Ecosystem</span>
+</div>
+<div class="wf-box" style="width:150px;height:130px">patient + device photo</div>
+</div>
+<div class="wf-sec">
+<div class="wf-line" style="height:8px;width:45%;margin-bottom:8px"></div>
+<div class="wf-row" style="flex-wrap:wrap"><div class="wf-box" style="width:88px;height:44px">01 Identify</div><div class="wf-box" style="width:88px;height:44px">02 Understand</div><div class="wf-box" style="width:88px;height:44px">03 Innovate</div><div class="wf-box" style="width:88px;height:44px">04 Design</div></div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1c"><div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Broadsheet grid, asymmetric</div>
+<div class="dv-card wf-card" style="width:400px">
+<div style="border-top:4px solid var(--color-text);border-bottom:1px solid var(--color-text);padding:6px 0;display:flex;justify-content:space-between;font-size:9px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px"><span>WELLINOVATE LTD.</span><span>Vol. 01 — HealthTech</span></div>
+<div class="wf-h" style="font-size:22px;margin-bottom:10px">HealthTech Innovation for a Connected Future</div>
+<div class="wf-row">
+<div class="wf-box" style="flex:1.4;height:150px">feature: our purpose</div>
+<div class="wf-col" style="flex:1;gap:8px"><div class="wf-box" style="height:70px">ecosystem teaser</div><div class="wf-box" style="height:70px">vision teaser</div></div>
+</div>
+<div style="font-family:var(--font-heading);font-style:italic;font-size:13px;margin-top:10px;color:var(--color-accent-700)">"We start with the problem. We understand the challenge."</div>
+</div></div>
+
+<div class="dv-opt" id="1d"><div class="dv-olabel"><a class="dv-oid" href="#1d">1d</a>Minimal, typographic-only</div>
+<div class="dv-card wf-card" style="width:400px">
+<div class="wf-nav"><span>WELLINOVATE</span><span>Menu</span></div>
+<div class="wf-h" style="font-size:30px;line-height:1.05;margin:30px 0 20px">HealthTech<br>Innovation for a<br>Connected Future.</div>
+<div class="wf-col" style="width:60%;gap:5px;margin-bottom:20px"><div class="wf-line" style="height:6px;width:100%"></div><div class="wf-line" style="height:6px;width:90%"></div><div class="wf-line" style="height:6px;width:60%"></div></div>
+<span class="wf-btn2">Read Our Story →</span>
+</div></div>
+
+<div class="dv-opt" id="1e"><div class="dv-olabel"><a class="dv-oid" href="#1e">1e</a>Process-first, timeline lead</div>
+<div class="dv-card wf-card" style="width:400px">
+<div class="wf-nav"><span>WELLINOVATE</span><div class="wf-navitems"><span>About</span><span>Process</span><span>Contact</span></div></div>
+<div class="wf-line" style="height:8px;width:75%;margin-bottom:14px"></div>
+<div style="display:flex;flex-direction:column;gap:0;border-left:2px solid var(--color-neutral-300);padding-left:12px;margin-left:6px">
+<div style="margin-bottom:14px"><span class="wf-circle" style="margin-left:-27px;margin-bottom:4px;display:inline-block">01</span><div class="wf-line" style="height:6px;width:80%;margin-top:6px"></div></div>
+<div style="margin-bottom:14px"><span class="wf-circle" style="margin-left:-27px;margin-bottom:4px;display:inline-block">02</span><div class="wf-line" style="height:6px;width:70%;margin-top:6px"></div></div>
+<div style="margin-bottom:14px"><span class="wf-circle" style="margin-left:-27px;margin-bottom:4px;display:inline-block">03</span><div class="wf-line" style="height:6px;width:85%;margin-top:6px"></div></div>
+</div>
+<span class="wf-btn" style="margin-top:6px">See Full Process</span>
+</div></div>
+
+</div>
+<p class="dv-next">Try next: "build out <a class="dv-oid" href="#1c">1c</a>'s style for the other pages" · "combine <a class="dv-oid" href="#1a">1a</a>'s hero with <a class="dv-oid" href="#1e">1e</a>'s timeline" · "more homepage directions"</p>
+</section>
+
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">About / Who We Are — 3 directions</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="2a"><div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>Stacked, text-forward</div>
+<div class="dv-card wf-card" style="width:380px">
+<div class="wf-nav"><span>WELLINOVATE</span><span>← Back</span></div>
+<div class="wf-h" style="font-size:20px;margin-bottom:10px">Who We Are</div>
+<div class="wf-col" style="gap:6px;margin-bottom:12px"><div class="wf-line" style="height:6px;width:100%"></div><div class="wf-line" style="height:6px;width:95%"></div><div class="wf-line" style="height:6px;width:85%"></div><div class="wf-line" style="height:6px;width:100%"></div><div class="wf-line" style="height:6px;width:60%"></div></div>
+<div class="wf-box" style="height:60px;border-left:3px solid var(--color-accent);border-style:solid;text-align:left;justify-content:flex-start;padding-left:10px">pull quote: "we combine healthcare expertise, technology, AI and design"</div>
+</div></div>
+
+<div class="dv-opt" id="2b"><div class="dv-olabel"><a class="dv-oid" href="#2b">2b</a>Split with imagery</div>
+<div class="dv-card wf-card" style="width:380px">
+<div class="wf-nav"><span>WELLINOVATE</span><span>← Back</span></div>
+<div class="wf-row" style="margin-bottom:12px">
+<div class="wf-col" style="flex:1"><div class="wf-h" style="font-size:17px">Who We Are</div><div class="wf-line" style="height:6px;width:95%"></div><div class="wf-line" style="height:6px;width:80%"></div><div class="wf-line" style="height:6px;width:90%"></div></div>
+<div class="wf-box" style="width:130px;height:110px">team/office photo</div>
+</div>
+<div class="wf-box" style="height:50px">full-width purpose statement</div>
+</div></div>
+
+<div class="dv-opt" id="2c"><div class="dv-olabel"><a class="dv-oid" href="#2c">2c</a>Statement timeline</div>
+<div class="dv-card wf-card" style="width:380px">
+<div class="wf-nav"><span>WELLINOVATE</span><span>← Back</span></div>
+<div class="wf-h" style="font-size:17px;margin-bottom:12px">At Wellinovate, we start with the problem.</div>
+<div class="wf-col" style="gap:8px">
+<div class="wf-row" style="align-items:center"><span style="color:var(--color-accent);font-size:12px">—</span><div class="wf-line" style="height:6px;width:85%"></div></div>
+<div class="wf-row" style="align-items:center"><span style="color:var(--color-accent);font-size:12px">—</span><div class="wf-line" style="height:6px;width:70%"></div></div>
+<div class="wf-row" style="align-items:center"><span style="color:var(--color-accent);font-size:12px">—</span><div class="wf-line" style="height:6px;width:90%"></div></div>
+<div class="wf-row" style="align-items:center"><span style="color:var(--color-accent);font-size:12px">—</span><div class="wf-line" style="height:6px;width:60%"></div></div>
+</div>
+<span class="wf-btn2" style="margin-top:10px;display:inline-block">Our Purpose →</span>
+</div></div>
+
+</div>
+<p class="dv-next">Try next: "use <a class="dv-oid" href="#2c">2c</a>'s statement rhythm on the Vision/Mission page" · "add real team photo slot to <a class="dv-oid" href="#2b">2b</a>"</p>
+</section>
+
+<section class="dv-turn" id="t3">
+<div class="dv-thd"><a class="dv-tid" href="#t3">3</a><span class="dv-tname">Solutions / HealthTech Ecosystem — 3 directions</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="3a"><div class="dv-olabel"><a class="dv-oid" href="#3a">3a</a>Even product grid</div>
+<div class="dv-card wf-card" style="width:400px">
+<div class="wf-nav"><span>WELLINOVATE</span><span>← Back</span></div>
+<div class="wf-h" style="font-size:17px;margin-bottom:10px">Our HealthTech Ecosystem</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px">
+<div class="wf-box" style="height:52px">welliRecord</div><div class="wf-box" style="height:52px">welliID</div><div class="wf-box" style="height:52px">WelliCare</div><div class="wf-box" style="height:52px">WelliPharm</div>
+<div class="wf-box" style="height:52px">WelliDiagnostic</div><div class="wf-box" style="height:52px">WelliPay</div><div class="wf-box" style="height:52px">WellISight</div><div class="wf-box" style="height:52px">WelliMate</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="3b"><div class="dv-olabel"><a class="dv-oid" href="#3b">3b</a>Descriptive list rows</div>
+<div class="dv-card wf-card" style="width:400px">
+<div class="wf-nav"><span>WELLINOVATE</span><span>← Back</span></div>
+<div class="wf-h" style="font-size:17px;margin-bottom:10px">Our HealthTech Ecosystem</div>
+<div class="wf-col" style="gap:8px">
+<div class="wf-row" style="align-items:center"><div class="wf-box" style="width:32px;height:32px;border-radius:50%">R</div><div class="wf-col" style="gap:3px;flex:1"><div class="wf-line" style="height:6px;width:35%"></div><div class="wf-line" style="height:5px;width:80%"></div></div></div>
+<div class="wf-row" style="align-items:center"><div class="wf-box" style="width:32px;height:32px;border-radius:50%">ID</div><div class="wf-col" style="gap:3px;flex:1"><div class="wf-line" style="height:6px;width:30%"></div><div class="wf-line" style="height:5px;width:75%"></div></div></div>
+<div class="wf-row" style="align-items:center"><div class="wf-box" style="width:32px;height:32px;border-radius:50%">C</div><div class="wf-col" style="gap:3px;flex:1"><div class="wf-line" style="height:6px;width:32%"></div><div class="wf-line" style="height:5px;width:82%"></div></div></div>
+<div class="wf-row" style="align-items:center;opacity:.5"><div class="wf-box" style="width:32px;height:32px;border-radius:50%">···</div><div class="wf-col" style="gap:3px;flex:1"><div class="wf-line" style="height:6px;width:25%"></div><div class="wf-line" style="height:5px;width:60%"></div></div></div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="3c"><div class="dv-olabel"><a class="dv-oid" href="#3c">3c</a>Featured + grid hybrid</div>
+<div class="dv-card wf-card" style="width:400px">
+<div class="wf-nav"><span>WELLINOVATE</span><span>← Back</span></div>
+<div class="wf-h" style="font-size:17px;margin-bottom:8px">Our HealthTech Ecosystem</div>
+<div class="wf-box" style="height:70px;margin-bottom:8px">Featured — welliRecord: patient-centered digital health records</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px">
+<div class="wf-box" style="height:44px">welliID</div><div class="wf-box" style="height:44px">WelliCare</div><div class="wf-box" style="height:44px">WelliPharm</div>
+<div class="wf-box" style="height:44px">WelliDiagnostic</div><div class="wf-box" style="height:44px">WelliPay</div><div class="wf-box" style="height:44px">+2 more</div>
+</div>
+</div></div>
+
+</div>
+<p class="dv-next">Try next: "make <a class="dv-oid" href="#3a">3a</a>'s tiles clickable cards with icons" · "pair <a class="dv-oid" href="#3c">3c</a> with the dashboard tile grid in <a class="dv-oid" href="#6c">6c</a>"</p>
+</section>
+
+<section class="dv-turn" id="t4">
+<div class="dv-thd"><a class="dv-tid" href="#t4">4</a><span class="dv-tname">Innovation Process (Idea → Solution, 8 steps) — 3 directions</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="4a"><div class="dv-olabel"><a class="dv-oid" href="#4a">4a</a>Vertical stepper</div>
+<div class="dv-card wf-card" style="width:360px">
+<div class="wf-nav"><span>WELLINOVATE</span><span>← Back</span></div>
+<div class="wf-h" style="font-size:16px;margin-bottom:10px">From Idea to Healthcare Solution</div>
+<div style="display:flex;flex-direction:column;border-left:2px solid var(--color-neutral-300);padding-left:12px;gap:10px">
+<div class="wf-row" style="align-items:center"><span class="wf-circle" style="margin-left:-27px">01</span><div class="wf-line" style="height:6px;width:75%"></div></div>
+<div class="wf-row" style="align-items:center"><span class="wf-circle" style="margin-left:-27px">02</span><div class="wf-line" style="height:6px;width:65%"></div></div>
+<div class="wf-row" style="align-items:center"><span class="wf-circle" style="margin-left:-27px">03</span><div class="wf-line" style="height:6px;width:80%"></div></div>
+<div class="wf-row" style="align-items:center;opacity:.5"><span class="wf-circle" style="margin-left:-27px">···</span><div class="wf-line" style="height:6px;width:50%"></div></div>
+<div class="wf-row" style="align-items:center"><span class="wf-circle" style="margin-left:-27px">08</span><div class="wf-line" style="height:6px;width:70%"></div></div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="4b"><div class="dv-olabel"><a class="dv-oid" href="#4b">4b</a>Horizontal scroll timeline</div>
+<div class="dv-card wf-card" style="width:400px">
+<div class="wf-nav"><span>WELLINOVATE</span><span>← Back</span></div>
+<div class="wf-h" style="font-size:16px;margin-bottom:10px">From Idea to Healthcare Solution</div>
+<div style="position:relative;padding-top:14px">
+<div style="position:absolute;top:24px;left:0;right:0;height:1px;background:var(--color-neutral-300)"></div>
+<div class="wf-row" style="gap:14px;overflow:hidden">
+<div class="wf-col" style="align-items:center;gap:6px"><span class="wf-circle">01</span><div class="wf-box" style="width:60px;height:34px;font-size:8px">Identify</div></div>
+<div class="wf-col" style="align-items:center;gap:6px"><span class="wf-circle">02</span><div class="wf-box" style="width:60px;height:34px;font-size:8px">Understand</div></div>
+<div class="wf-col" style="align-items:center;gap:6px"><span class="wf-circle">03</span><div class="wf-box" style="width:60px;height:34px;font-size:8px">Innovate</div></div>
+<div class="wf-col" style="align-items:center;gap:6px"><span class="wf-circle">04</span><div class="wf-box" style="width:60px;height:34px;font-size:8px">Design</div></div>
+<div class="wf-col" style="align-items:center;gap:6px;opacity:.4"><span class="wf-circle">···</span><div class="wf-box" style="width:60px;height:34px;font-size:8px">scroll →</div></div>
+</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="4c"><div class="dv-olabel"><a class="dv-oid" href="#4c">4c</a>Zigzag alternating</div>
+<div class="dv-card wf-card" style="width:380px">
+<div class="wf-nav"><span>WELLINOVATE</span><span>← Back</span></div>
+<div class="wf-h" style="font-size:16px;margin-bottom:10px">From Idea to Healthcare Solution</div>
+<div class="wf-col" style="gap:10px">
+<div class="wf-row" style="justify-content:flex-start"><div class="wf-box" style="width:60%;height:34px">01 Identify</div></div>
+<div class="wf-row" style="justify-content:flex-end"><div class="wf-box" style="width:60%;height:34px">02 Understand</div></div>
+<div class="wf-row" style="justify-content:flex-start"><div class="wf-box" style="width:60%;height:34px">03 Innovate</div></div>
+<div class="wf-row" style="justify-content:flex-end;opacity:.5"><div class="wf-box" style="width:60%;height:34px">··· through 08</div></div>
+</div>
+</div></div>
+
+</div>
+<p class="dv-next">Try next: "expand <a class="dv-oid" href="#4a">4a</a> to show all 8 steps with descriptions" · "animate the horizontal timeline in <a class="dv-oid" href="#4b">4b</a>"</p>
+</section>
+
+<section class="dv-turn" id="t5">
+<div class="dv-thd"><a class="dv-tid" href="#t5">5</a><span class="dv-tname">Vision / Mission — 2 directions</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="5a"><div class="dv-olabel"><a class="dv-oid" href="#5a">5a</a>Pull-quote lead</div>
+<div class="dv-card wf-card" style="width:380px">
+<div class="wf-nav"><span>WELLINOVATE</span><span>← Back</span></div>
+<div style="font-family:var(--font-heading);font-style:italic;font-size:19px;line-height:1.3;margin-bottom:16px;color:var(--color-text)">"To transform healthcare through innovation and technology, creating a more connected, accessible and intelligent ecosystem."</div>
+<div class="wf-box" style="height:64px">Mission statement box</div>
+</div></div>
+
+<div class="dv-opt" id="5b"><div class="dv-olabel"><a class="dv-oid" href="#5b">5b</a>Split vision | mission cards</div>
+<div class="dv-card wf-card" style="width:380px">
+<div class="wf-nav"><span>WELLINOVATE</span><span>← Back</span></div>
+<div class="wf-row">
+<div class="wf-box" style="flex:1;height:110px;flex-direction:column;gap:4px"><span class="wf-tag">Vision</span>statement lines</div>
+<div class="wf-box" style="flex:1;height:110px;flex-direction:column;gap:4px"><span class="wf-tag" style="background:var(--color-accent-100);color:var(--color-accent-700)">Mission</span>statement lines</div>
+</div>
+</div></div>
+
+</div>
+<p class="dv-next">Try next: "use <a class="dv-oid" href="#5a">5a</a>'s big pull-quote treatment for the homepage hero" · "add the Commitment statement below <a class="dv-oid" href="#5b">5b</a>"</p>
+</section>
+
+<section class="dv-turn" id="t6">
+<div class="dv-thd"><a class="dv-tid" href="#t6">6</a><span class="dv-tname">App — Dashboard / Home — 3 directions</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="6a"><div class="dv-olabel"><a class="dv-oid" href="#6a">6a</a>Top nav + stat cards</div>
+<div class="dv-card wf-card" style="width:420px">
+<div class="wf-nav"><span>WELLICARE</span><div class="wf-navitems"><span>Home</span><span>Records</span><span>Appts</span><span>Messages</span></div></div>
+<div class="wf-row" style="margin-bottom:10px"><div class="wf-box" style="flex:1;height:44px">Upcoming: 2</div><div class="wf-box" style="flex:1;height:44px">Records: 14</div><div class="wf-box" style="flex:1;height:44px">Unread: 3</div></div>
+<div class="wf-h" style="font-size:12px;margin-bottom:6px">Recent Activity</div>
+<div class="wf-col" style="gap:6px"><div class="wf-box" style="height:26px;justify-content:flex-start;padding-left:8px">Lab result — Sept 3</div><div class="wf-box" style="height:26px;justify-content:flex-start;padding-left:8px">Message from Dr. Ade</div><div class="wf-box" style="height:26px;justify-content:flex-start;padding-left:8px">Appointment confirmed</div></div>
+</div></div>
+
+<div class="dv-opt" id="6b"><div class="dv-olabel"><a class="dv-oid" href="#6b">6b</a>Sidebar + widget grid</div>
+<div class="dv-card wf-card" style="width:420px">
+<div class="wf-row" style="gap:12px">
+<div class="wf-col" style="width:56px;gap:14px;padding-top:4px;border-right:1px solid var(--color-neutral-300)"><div class="wf-circle" style="border-radius:6px">⌂</div><div class="wf-circle" style="border-radius:6px;opacity:.5">R</div><div class="wf-circle" style="border-radius:6px;opacity:.5">A</div><div class="wf-circle" style="border-radius:6px;opacity:.5">M</div></div>
+<div style="flex:1">
+<div class="wf-h" style="font-size:13px;margin-bottom:8px">Good morning</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+<div class="wf-box" style="height:60px">next appointment</div><div class="wf-box" style="height:60px">latest record</div>
+<div class="wf-box" style="height:60px">messages</div><div class="wf-box" style="height:60px">medication reminder</div>
+</div>
+</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="6c"><div class="dv-olabel"><a class="dv-oid" href="#6c">6c</a>Tile launcher</div>
+<div class="dv-card wf-card" style="width:420px">
+<div class="wf-nav"><span>WELLICARE</span><span>⚙ Profile</span></div>
+<div class="wf-h" style="font-size:14px;margin-bottom:10px">What would you like to do?</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<div class="wf-box" style="height:70px">Records</div><div class="wf-box" style="height:70px">Appointments</div>
+<div class="wf-box" style="height:70px">Messages</div><div class="wf-box" style="height:70px">Payments</div>
+</div>
+</div></div>
+
+</div>
+<p class="dv-next">Try next: "use <a class="dv-oid" href="#6b">6b</a>'s sidebar pattern across all app screens" · "add notification badges to <a class="dv-oid" href="#6c">6c</a>'s tiles"</p>
+</section>
+
+<section class="dv-turn" id="t7">
+<div class="dv-thd"><a class="dv-tid" href="#t7">7</a><span class="dv-tname">App — Records / Data View — 2 directions</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="7a"><div class="dv-olabel"><a class="dv-oid" href="#7a">7a</a>Table / list view</div>
+<div class="dv-card wf-card" style="width:420px">
+<div class="wf-nav"><span>WELLICARE</span><span>← Home</span></div>
+<div class="wf-h" style="font-size:14px;margin-bottom:8px">Health Records</div>
+<div class="wf-row" style="font-size:9px;color:var(--color-neutral-600);border-bottom:1px solid var(--color-neutral-300);padding-bottom:4px;margin-bottom:4px"><span style="flex:1">Date</span><span style="flex:1">Type</span><span style="flex:1">Provider</span><span style="flex:1">Status</span></div>
+<div class="wf-row" style="align-items:center;padding:4px 0"><span class="wf-line" style="height:6px;width:70%;flex:1"></span><span class="wf-line" style="height:6px;width:60%;flex:1"></span><span class="wf-line" style="height:6px;width:60%;flex:1"></span><span class="wf-tag" style="flex:1;width:fit-content">Final</span></div>
+<div class="wf-row" style="align-items:center;padding:4px 0"><span class="wf-line" style="height:6px;width:70%;flex:1"></span><span class="wf-line" style="height:6px;width:60%;flex:1"></span><span class="wf-line" style="height:6px;width:60%;flex:1"></span><span class="wf-tag" style="flex:1;width:fit-content;background:var(--color-accent-100);color:var(--color-accent-700)">Pending</span></div>
+<div class="wf-row" style="align-items:center;padding:4px 0"><span class="wf-line" style="height:6px;width:70%;flex:1"></span><span class="wf-line" style="height:6px;width:60%;flex:1"></span><span class="wf-line" style="height:6px;width:60%;flex:1"></span><span class="wf-tag" style="flex:1;width:fit-content">Final</span></div>
+</div></div>
+
+<div class="dv-opt" id="7b"><div class="dv-olabel"><a class="dv-oid" href="#7b">7b</a>Timeline / chart view</div>
+<div class="dv-card wf-card" style="width:420px">
+<div class="wf-nav"><span>WELLICARE</span><span>← Home</span></div>
+<div class="wf-h" style="font-size:14px;margin-bottom:8px">Health Records</div>
+<div class="wf-box" style="height:60px;margin-bottom:10px">vitals chart (last 6 months)</div>
+<div style="display:flex;flex-direction:column;border-left:2px solid var(--color-neutral-300);padding-left:10px;gap:10px">
+<div class="wf-row" style="align-items:center"><span class="wf-circle" style="margin-left:-21px;width:16px;height:16px">•</span><div class="wf-line" style="height:6px;width:70%"></div></div>
+<div class="wf-row" style="align-items:center"><span class="wf-circle" style="margin-left:-21px;width:16px;height:16px">•</span><div class="wf-line" style="height:6px;width:55%"></div></div>
+<div class="wf-row" style="align-items:center"><span class="wf-circle" style="margin-left:-21px;width:16px;height:16px">•</span><div class="wf-line" style="height:6px;width:65%"></div></div>
+</div>
+</div></div>
+
+</div>
+<p class="dv-next">Try next: "add filter chips to <a class="dv-oid" href="#7a">7a</a>" · "make <a class="dv-oid" href="#7b">7b</a>'s chart interactive with real vitals data"</p>
+</section>
+
+<section class="dv-turn" id="t8">
+<div class="dv-thd"><a class="dv-tid" href="#t8">8</a><span class="dv-tname">App — Appointments / Scheduling — 2 directions</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="8a"><div class="dv-olabel"><a class="dv-oid" href="#8a">8a</a>Calendar month view</div>
+<div class="dv-card wf-card" style="width:400px">
+<div class="wf-nav"><span>WELLICARE</span><span>← Home</span></div>
+<div class="wf-h" style="font-size:13px;margin-bottom:8px">September 2026</div>
+<div style="display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-bottom:10px">
+<div class="wf-box" style="height:22px;font-size:8px">S</div><div class="wf-box" style="height:22px;font-size:8px">M</div><div class="wf-box" style="height:22px;font-size:8px">T</div><div class="wf-box" style="height:22px;font-size:8px">W</div><div class="wf-box" style="height:22px;font-size:8px">T</div><div class="wf-box" style="height:22px;font-size:8px">F</div><div class="wf-box" style="height:22px;font-size:8px">S</div>
+<div class="wf-box" style="height:22px"></div><div class="wf-box" style="height:22px"></div><div class="wf-box" style="height:22px;background:var(--color-accent-100);border-color:var(--color-accent)">9</div><div class="wf-box" style="height:22px"></div><div class="wf-box" style="height:22px"></div><div class="wf-box" style="height:22px;background:var(--color-accent-100);border-color:var(--color-accent)">12</div><div class="wf-box" style="height:22px"></div>
+</div>
+<div class="wf-h" style="font-size:11px;margin-bottom:6px">Upcoming</div>
+<div class="wf-box" style="height:28px;justify-content:flex-start;padding-left:8px">Sept 9 — Dr. Ade, 10:00am</div>
+</div></div>
+
+<div class="dv-opt" id="8b"><div class="dv-olabel"><a class="dv-oid" href="#8b">8b</a>Agenda / list view</div>
+<div class="dv-card wf-card" style="width:400px">
+<div class="wf-nav"><span>WELLICARE</span><span>← Home</span></div>
+<div class="wf-row" style="margin-bottom:10px"><span class="wf-btn">Upcoming</span><span class="wf-btn2">Past</span></div>
+<div class="wf-col" style="gap:8px">
+<div class="wf-box" style="height:44px;justify-content:flex-start;padding-left:10px;flex-direction:column;align-items:flex-start;gap:2px"><div class="wf-line" style="height:6px;width:60%"></div><div class="wf-line" style="height:5px;width:40%"></div></div>
+<div class="wf-box" style="height:44px;justify-content:flex-start;padding-left:10px;flex-direction:column;align-items:flex-start;gap:2px"><div class="wf-line" style="height:6px;width:55%"></div><div class="wf-line" style="height:5px;width:35%"></div></div>
+</div>
+<span class="wf-btn" style="margin-top:10px;display:inline-block">+ New Appointment</span>
+</div></div>
+
+</div>
+<p class="dv-next">Try next: "combine calendar from <a class="dv-oid" href="#8a">8a</a> with the agenda list from <a class="dv-oid" href="#8b">8b</a>"</p>
+</section>
+
+<section class="dv-turn" id="t9">
+<div class="dv-thd"><a class="dv-tid" href="#t9">9</a><span class="dv-tname">App — Messaging — 2 directions</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="9a"><div class="dv-olabel"><a class="dv-oid" href="#9a">9a</a>Two-pane inbox + thread</div>
+<div class="dv-card wf-card" style="width:440px">
+<div class="wf-nav"><span>WELLICARE</span><span>← Home</span></div>
+<div class="wf-row" style="gap:10px">
+<div class="wf-col" style="width:120px;gap:8px;border-right:1px solid var(--color-neutral-300);padding-right:8px">
+<div class="wf-row" style="align-items:center;gap:6px"><div class="wf-avatar"></div><div class="wf-line" style="height:6px;width:60%"></div></div>
+<div class="wf-row" style="align-items:center;gap:6px;opacity:.6"><div class="wf-avatar"></div><div class="wf-line" style="height:6px;width:50%"></div></div>
+<div class="wf-row" style="align-items:center;gap:6px;opacity:.6"><div class="wf-avatar"></div><div class="wf-line" style="height:6px;width:55%"></div></div>
+</div>
+<div class="wf-col" style="flex:1;gap:6px">
+<div class="wf-bubble">Your lab results are ready.</div>
+<div class="wf-bubble me">Thanks, can we discuss on a call?</div>
+<div class="wf-bubble">Sure — Thursday 3pm works.</div>
+</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="9b"><div class="dv-olabel"><a class="dv-oid" href="#9b">9b</a>Single-pane stacked list</div>
+<div class="dv-card wf-card" style="width:380px">
+<div class="wf-nav"><span>WELLICARE</span><span>← Home</span></div>
+<div class="wf-h" style="font-size:13px;margin-bottom:8px">Messages</div>
+<div class="wf-col" style="gap:6px">
+<div class="wf-row" style="align-items:center;gap:8px;padding:6px;border:1px solid var(--color-accent-300);background:var(--color-accent-100)"><div class="wf-avatar"></div><div class="wf-col" style="gap:2px;flex:1"><div class="wf-line" style="height:6px;width:45%"></div><div class="wf-line" style="height:5px;width:80%"></div></div></div>
+<div class="wf-row" style="align-items:center;gap:8px;padding:6px"><div class="wf-avatar"></div><div class="wf-col" style="gap:2px;flex:1"><div class="wf-line" style="height:6px;width:40%"></div><div class="wf-line" style="height:5px;width:70%"></div></div></div>
+<div class="wf-row" style="align-items:center;gap:8px;padding:6px"><div class="wf-avatar"></div><div class="wf-col" style="gap:2px;flex:1"><div class="wf-line" style="height:6px;width:50%"></div><div class="wf-line" style="height:5px;width:65%"></div></div></div>
+</div>
+</div></div>
+
+</div>
+<p class="dv-next">Try next: "wireframe more app screens" · "start refining <a class="dv-oid" href="#1c">1c</a> for the homepage into higher fidelity"</p>
+</section>
+
+</x-dc>
+</body>
+</html>
