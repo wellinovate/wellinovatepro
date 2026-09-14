@@ -388,3 +388,36 @@ body {
   font-weight: 600;
 }
 
+/* Broadsheet Offline Continuity Indicator */
+.offline-indicator {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fdf3d8;
+  color: #78350f;
+  border-bottom: 2px solid var(--color-brand-gold);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 7px 16px;
+  z-index: 99999;
+  box-shadow: 0 2px 8px rgba(120, 53, 15, 0.15);
+}
+
+.offline-indicator.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  animation: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+

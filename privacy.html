@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
   <meta name="theme-color" content="#008276">
   
   <!-- Open Graph / Social Sharing -->
@@ -90,6 +91,7 @@
   </style>
 </head>
 <body>
+  <div id="offline-banner" class="offline-indicator" role="status" aria-live="polite">⚡ Offline Continuity Mode Active — Local Clinical Cache Running</div>
 
   <nav class="nav" id="main-navigation">
     <a href="./index.html" class="nav-brand" aria-label="Wellinovate Home">
@@ -272,5 +274,6 @@
   </div>
 
   <script type="module" src="./_ds/broadsheet-33e1abc0-c76e-4efe-9cc0-1407cbd4a61e/_ds_bundle.js"></script>
+  <script type="module" src="./pwa-init.js"></script>
 </body>
 </html>
