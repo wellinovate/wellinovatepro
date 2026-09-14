@@ -386,6 +386,12 @@
 
         if (response.ok && (data.success === 'true' || data.success === true || data.ok)) {
           form.reset();
+          feedback.innerHTML = '<strong>Transmission Confirmed.</strong> Your inquiry has been delivered to the Wellinovate clinical and partnerships team. We will review your message and follow up within 24 business hours.';
+          feedback.classList.add('active');
+          feedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else if (data.message && (data.message.includes('Activation') || data.message.includes('activate'))) {
+          form.reset();
+          feedback.innerHTML = '<strong>📬 Activation Link Sent to hello@wellinovate.com</strong><p style="margin:4px 0 0;font-size:13.5px;">FormSubmit has dispatched an initial confirmation link to <code>hello@wellinovate.com</code>. Once clicked, all future submissions will route instantly to your team\'s inbox.</p>';
           feedback.classList.add('active');
           feedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else {
