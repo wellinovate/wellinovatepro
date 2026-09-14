@@ -199,9 +199,19 @@
         </div>
 
         <form class="form" id="contact-form" onsubmit="handleFormSubmit(event)">
+          <!-- Anti-spam Honeypot -->
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <!-- Interactive Alerts -->
           <div id="form-feedback" class="form-success" role="alert">
-            <strong>Thank you!</strong> Your message has been received. Our team will review your inquiry and respond within 24 business hours.
+            <strong>Transmission Confirmed.</strong> Your inquiry has been delivered to the Wellinovate clinical and partnerships team. We will review your message and follow up within 24 business hours.
           </div>
+          <div id="form-error" class="form-error" role="alert">
+            <strong>Transmission Interrupted.</strong> We could not send your message automatically. <a id="error-mailto-link" href="mailto:hello@wellinovate.com?subject=Wellinovate%20Inquiry">Click here to send directly via your email client →</a>
+          </div>
+
           <div class="form-row">
             <div class="field">
               <label for="name">Your Name</label>
@@ -218,9 +228,9 @@
           </div>
           <div class="field">
             <label for="message">How can we help?</label>
-            <textarea id="message" name="message" class="input" placeholder="Tell us about the challenge your team is facing..." required></textarea>
+            <textarea id="message" name="message" class="input" rows="4" placeholder="Tell us about the challenge your team is facing..." required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" id="btn-submit-contact">Send message →</button>
+          <button type="submit" class="btn btn-primary" id="btn-submit-contact"><span id="btn-text">Send message →</span></button>
         </form>
       </section>
     </main>
@@ -239,7 +249,7 @@
             <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 256 256" fill="currentColor"><path opacity="0.2" d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Z"/><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"/></svg></a>
             <a href="#" aria-label="Facebook"><svg viewBox="0 0 256 256" fill="currentColor"><path opacity="0.2" d="M224,128a96,96,0,1,1-112-94.8V128h32V80h32v16a16,16,0,0,1-16,16H144v16h32Z"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm12,177.52V152h20a8,8,0,0,0,0-16H140V112a8,8,0,0,1,8-8h16a8,8,0,0,0,0-16H148a24,24,0,0,0-24,24v24H100a8,8,0,0,0,0,16h24v49.52a88,88,0,1,1,16,0Z"/></svg></a>
             <a href="#" aria-label="Instagram"><svg viewBox="0 0 256 256" fill="currentColor"><rect opacity="0.2" x="40" y="40" width="176" height="176" rx="44"/><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM172,24H84A60.07,60.07,0,0,0,24,84v88a60.07,60.07,0,0,0,60,60h88a60.07,60.07,0,0,0,60-60V84A60.07,60.07,0,0,0,172,24Zm44,148a44.05,44.05,0,0,1-44,44H84a44.05,44.05,0,0,1-44-44V84A44.05,44.05,0,0,1,84,40h88a44.05,44.05,0,0,1,44,44ZM196,76a12,12,0,1,1-12-12A12,12,0,0,1,196,76Z"/></svg></a>
-            <a href="#" aria-label="X"><svg viewBox="0 0 256 256" fill="currentColor"><path opacity="0.2" d="M223.75,215.49,167.6,132.94,222,72.16A8,8,0,0,0,210,60.24l-51.72,58.47L124.2,64.43A8,8,0,0,0,117.5,60H40.25a8,8,0,0,0-6.61,12.51L89.79,155.06,35.36,215.84A8,8,0,0,0,47.36,227.76L99.08,169.29,132.6,219.57a8,8,0,0,0,6.7,3.63h77.25A8,8,0,0,0,223.75,215.49Z"/><path d="M223.75,215.49,167.6,132.94,222,72.16A8,8,0,1,0,210,60.24l-51.72,58.47L124.2,64.43A8,8,0,0,0,117.5,60H40.25a8,8,0,0,0-6.61,12.51L89.79,155.06,35.36,215.84a8,8,0,1,0,12,10.92L99.08,169.29,132.6,219.57a8,8,0,0,0,6.7,3.63h77.25a8,8,0,0,0,7.2-11.71ZM122.14,206,50.25,76h17.5l71.9,130Zm60.36,0-108-158h20l108,158Z"/></svg></a>
+            <a href="#" aria-label="X"><svg viewBox="0 0 256 256" fill="currentColor"><path opacity="0.2" d="M223.75,215.49,167.6,132.94,222,72.16A8,8,0,0,0,210,60.24l-51.72,58.47L124.2,64.43A8,8,0,0,0,117.5,60H40.25a8,8,0,0,0-6.61,12.51L89.79,155.06,35.36,215.84A8,8,0,0,0,47.36,227.76L99.08,169.29,132.6,219.57a8,8,0,0,0,6.7,3.63h77.25A8,8,0,0,0,223.75,215.49Z"/><path d="M223.75,215.49,167.6,132.94,222,72.16A8,8,0,1,0,210,60.24l-51.72,58.47L124.2,64.43A8,8,0,0,0,117.5,60H40.25a8,8,0,0,0-6.61,12.51L89.79,155.06,35.36,215.84A8,8,0,1,0,12,10.92L99.08,169.29,132.6,219.57a8,8,0,0,0,6.7,3.63h77.25a8,8,0,0,0,7.2-11.71ZM122.14,206,50.25,76h17.5l71.9,130Zm60.36,0-108-158h20l108,158Z"/></svg></a>
           </div>
         </div>
         <div class="footcol">
@@ -276,12 +286,94 @@
 
   <script type="module" src="./_ds/broadsheet-33e1abc0-c76e-4efe-9cc0-1407cbd4a61e/_ds_bundle.js"></script>
   <script>
-    function handleFormSubmit(event) {
+    // Form submission endpoint (FormSubmit AJAX default - forwards directly to hello@wellinovate.com)
+    // To switch to Formspree, change to: 'https://formspree.io/f/YOUR_FORM_ID'
+    const FORM_ENDPOINT = 'https://formsubmit.co/ajax/hello@wellinovate.com';
+
+    async function handleFormSubmit(event) {
       event.preventDefault();
+      const form = document.getElementById('contact-form');
+      const submitBtn = document.getElementById('btn-submit-contact');
+      const btnText = document.getElementById('btn-text');
       const feedback = document.getElementById('form-feedback');
-      feedback.classList.add('active');
-      document.getElementById('contact-form').reset();
-      feedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const errorBox = document.getElementById('form-error');
+      const errorMailto = document.getElementById('error-mailto-link');
+
+      // Clear previous alerts
+      feedback.classList.remove('active');
+      errorBox.classList.remove('active');
+
+      const formData = new FormData(form);
+
+      // Bot honeypot trap
+      if (formData.get('_honey')) {
+        form.reset();
+        feedback.classList.add('active');
+        return;
+      }
+
+      const name = formData.get('name') || '';
+      const email = formData.get('email') || '';
+      const organization = formData.get('organization') || 'Individual / Unspecified';
+      const message = formData.get('message') || '';
+
+      // Prepare payload
+      const payload = {
+        name: name,
+        email: email,
+        organization: organization,
+        message: message,
+        _subject: `New Wellinovate Inquiry: ${name} (${organization})`
+      };
+
+      // Set in-flight UI state
+      submitBtn.disabled = true;
+      submitBtn.classList.add('btn-submitting');
+      btnText.textContent = 'Transmitting dispatch...';
+
+      // Setup 15-second timeout controller
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 15000);
+
+      try {
+        const response = await fetch(FORM_ENDPOINT, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload),
+          signal: controller.signal
+        });
+
+        clearTimeout(timeoutId);
+
+        let data = {};
+        try {
+          data = await response.json();
+        } catch (_) {}
+
+        if (response.ok && (data.success === 'true' || data.success === true || data.ok)) {
+          form.reset();
+          feedback.classList.add('active');
+          feedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          throw new Error(data.message || 'Transmission could not be confirmed.');
+        }
+      } catch (err) {
+        clearTimeout(timeoutId);
+        // Prepare pre-populated mailto fallback link
+        const subjectEnc = encodeURIComponent(`Wellinovate Inquiry: ${name} (${organization})`);
+        const bodyEnc = encodeURIComponent(`Hello Wellinovate Team,\n\nName: ${name}\nEmail: ${email}\nOrganization: ${organization}\n\nMessage:\n${message}\n`);
+        errorMailto.href = `mailto:hello@wellinovate.com?subject=${subjectEnc}&body=${bodyEnc}`;
+        
+        errorBox.classList.add('active');
+        errorBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('btn-submitting');
+        btnText.textContent = 'Send message →';
+      }
     }
   </script>
 </body>
