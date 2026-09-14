@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms of Service — Wellinovate Healthcare Platform</title>
+  <meta name="description" content="Master terms of service, clinical responsibility boundaries, provider software licensing, and institutional service level commitments for Wellinovate.">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#008276">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Wellinovate">
+  <meta property="og:title" content="Terms of Service — Wellinovate Healthcare Platform">
+  <meta property="og:description" content="Clinical responsibility boundaries, institutional software agreements, and service level commitments.">
+  <meta property="og:image" content="https://wellinovate.github.io/wellinovatepro/assets/og-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Wellinovate — Terms of Service">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Terms of Service — Wellinovate Healthcare Platform">
+  <meta name="twitter:description" content="Clinical responsibility boundaries, institutional software agreements, and service level commitments.">
+  <meta name="twitter:image" content="https://wellinovate.github.io/wellinovatepro/assets/og-preview.jpg">
+  <link rel="stylesheet" href="./styles/main.css">
+  <style>
+    .kicker{display:block;font-size:13px;line-height:var(--half);letter-spacing:.08em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 70%,transparent);margin:0 0 calc(var(--leading) - var(--half))}
+    .pagehead{padding:calc(3 * var(--leading)) 0 calc(1.5 * var(--leading))}
+    .pagehead h1{font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:clamp(34px,4.5vw,52px);line-height:1.15;letter-spacing:-0.02em;margin:0}
+    .pagehead .sub{font-size:17px;line-height:var(--leading);max-width:64ch;margin:calc(var(--leading) - 0.5em) 0 0;color:color-mix(in srgb,var(--color-text) 78%,transparent)}
+    .rule-head{height:5px;border:0;margin:0;border-top:2px solid var(--color-text);border-bottom:1px solid var(--color-text)}
+    .rule-cut{height:0;border:0;border-top:1px solid var(--color-text);margin:0}
+    .dateline{display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--half) var(--leading);margin:0;padding:var(--half) 0;font-size:13px;line-height:var(--half);letter-spacing:.08em;text-transform:uppercase;font-feature-settings:"pnum" 1;color:color-mix(in srgb,var(--color-text) 70%,transparent)}
+    
+    .legal-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3.2fr);gap:calc(2 * var(--leading)) clamp(24px,4vw,64px);padding:calc(2 * var(--leading)) 0 calc(3 * var(--leading))}
+    @media (max-width:880px){.legal-body{grid-template-columns:1fr}}
+
+    .legal-toc{position:sticky;top:calc(3 * var(--leading));align-self:start;border-left:2px solid var(--color-accent-300);padding-left:var(--space-3)}
+    .legal-toc h4{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--color-text);margin:0 0 var(--half)}
+    .legal-toc ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+    .legal-toc a{font-size:14px;color:color-mix(in srgb,var(--color-text) 75%,transparent);text-decoration:none;transition:color 0.15s ease}
+    .legal-toc a:hover{color:var(--color-accent-700)}
+
+    .legal-content{max-width:70ch}
+    .legal-sec{margin-bottom:calc(2.5 * var(--leading));scroll-margin-top:calc(3 * var(--leading))}
+    .legal-sec h2{font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:24px;line-height:var(--leading);letter-spacing:-0.01em;margin:0 0 var(--half);color:var(--color-text)}
+    .legal-sec p{font-size:15.5px;line-height:var(--leading);color:color-mix(in srgb,var(--color-text) 82%,transparent);margin:0 0 calc(var(--leading) - 0.5em)}
+    .legal-sec ul{margin:0 0 var(--leading);padding-left:20px;font-size:15px;line-height:var(--leading);color:color-mix(in srgb,var(--color-text) 82%,transparent)}
+    .legal-sec li{margin-bottom:6px}
+    .alert-box{background:#fdf5e6;border-left:3px solid var(--color-brand-gold);padding:var(--space-3);border-radius:0 var(--radius-sm,4px) var(--radius-sm,4px) 0;margin:calc(var(--leading) - 0.5em) 0 var(--leading)}
+    .alert-box p{margin:0;font-size:14.5px;line-height:1.55;color:#78350f}
+
+    .sitefoot{padding:calc(3 * var(--leading)) 0 max(calc(1.5 * var(--leading)),calc(1.5 * var(--leading)) + env(safe-area-inset-bottom,0px))}
+    .sitefoot .rule-head{margin-bottom:calc(1.5 * var(--leading))}
+    .footgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--leading) clamp(24px,4vw,64px)}
+    @media (max-width:820px){.footgrid{grid-template-columns:1fr 1fr}}
+    @media (max-width:480px){.footgrid{grid-template-columns:1fr}}
+    .footgrid .brand-col p{font-size:14.5px;line-height:var(--leading);color:color-mix(in srgb,var(--color-text) 78%,transparent);max-width:32ch;margin:calc(var(--half) - 0.5em) 0 0}
+    .footcol h5{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 60%,transparent);margin:0 0 var(--half)}
+    .footcol ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+    .footcol a{font-size:14.5px;color:var(--color-text);text-decoration:none}
+    .footcol a:hover{color:var(--color-accent-700)}
+    .footbottom{margin-top:calc(2 * var(--leading));padding-top:var(--half);border-top:1px solid color-mix(in srgb,var(--color-text) 15%,transparent);display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--half);font-size:13px;color:color-mix(in srgb,var(--color-text) 65%,transparent)}
+    .footbottom a{color:inherit;text-decoration:none}
+    .footbottom a:hover{color:var(--color-accent-700)}
+    .social{display:flex;gap:8px;margin-top:var(--leading)}
+    .social a{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:var(--radius-sm,4px);color:var(--color-text)}
+    .social a:hover{color:var(--color-accent-700);background:var(--color-accent-100)}
+    .social a:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}
+    .social svg{width:18px;height:18px}
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="main-navigation">
+    <a href="./index.html" class="nav-brand" aria-label="Wellinovate Home">
+      <img src="./assets/wellinovate-logo-mark.png" alt="Wellinovate Emblem" class="nav-logo-mark" width="38" height="38">
+      <div class="nav-brand-text">
+        <span class="nav-brand-title"><span class="brand-well">Well</span><span class="brand-inovate">inovate</span></span>
+        <span class="nav-brand-tagline">Empowering Better Health Decisions</span>
+      </div>
+    </a>
+    <a href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./solutions.html">Solutions</a>
+    <a href="./team.html">Team</a>
+    <a href="./process.html">Process &amp; Contact</a>
+    <a href="./process.html#contact" class="btn btn-primary" id="nav-cta-contact">Get in touch</a>
+  </nav>
+
+  <div class="wrap">
+    <main>
+      <section class="pagehead" data-screen-label="Terms">
+        <span class="kicker">Institutional Agreement</span>
+        <h1>Terms of Service &amp; Clinical Operational Framework</h1>
+        <p class="sub">Master terms governing platform access, clinical decision support limitations, institutional software licensing, and healthcare service level commitments.</p>
+      </section>
+
+      <hr class="rule-head">
+      <p class="dateline">
+        <span>Wellinovate Ltd. — Legal &amp; Governance</span>
+        <span>Effective Date: September 14, 2026</span>
+        <span>Version 1.2 — Global Edition</span>
+      </p>
+      <hr class="rule-cut">
+
+      <div class="legal-body">
+        <aside class="legal-toc" aria-label="Table of Contents">
+          <h4>Table of Contents</h4>
+          <ul>
+            <li><a href="#acceptance">1. Acceptance &amp; Scope</a></li>
+            <li><a href="#clinical-disclaimer">2. Clinical Disclaimer &amp; Responsibility</a></li>
+            <li><a href="#authentication">3. Access &amp; Credentialing</a></li>
+            <li><a href="#sla">4. Service Level Commitments</a></li>
+            <li><a href="#ip-rights">5. Intellectual Property &amp; EHR Data</a></li>
+            <li><a href="#acceptable-use">6. Acceptable Use &amp; Safety</a></li>
+            <li><a href="#liability">7. Limitation of Liability</a></li>
+            <li><a href="#governing-law">8. Governing Law &amp; Arbitration</a></li>
+            <li><a href="#legal-contact">9. Contact &amp; Notices</a></li>
+          </ul>
+        </aside>
+
+        <article class="legal-content">
+          <section class="legal-sec" id="acceptance">
+            <h2>1. Acceptance of Terms &amp; Scope</h2>
+            <p>These Terms of Service ("Terms") constitute a legally binding agreement between Wellinovate Ltd. ("Wellinovate," "we," "us") and the hospital, clinic, diagnostic network, healthcare professional, or user ("Customer," "you") accessing the Wellinovate software applications, diagnostic firmware, APIs, and connected clinical infrastructure.</p>
+            <p>By executing an institutional master service agreement, deploying any Wellinovate diagnostic hardware, or accessing platforms including <code>welliRecord</code>, <code>welliID</code>, <code>WelliCare</code>, or <code>WelliMate</code>, you agree to be bound by these Terms.</p>
+          </section>
+
+          <section class="legal-sec" id="clinical-disclaimer">
+            <h2>2. Clinical Decision Support &amp; Physician Responsibility</h2>
+            <div class="alert-box">
+              <p><strong>Crucial Medical Notice:</strong> Wellinovate platforms provide digital health infrastructure, clinical workflow automation, and algorithmic decision support. Wellinovate does not practice medicine. The ultimate responsibility for patient assessment, clinical diagnosis, therapeutic judgment, prescription authorization, and patient management rests exclusively with licensed healthcare practitioners.</p>
+            </div>
+            <p>Algorithms, risk scoring, drug interaction flags, and predictive alerts surfaced within <code>WelliMate</code> and <code>WelliDiagnostic</code> are assistive tools designed to augment clinician situational awareness. Clinicians must independently verify all algorithmic suggestions against their own physical examination, diagnostic judgment, and institutional standard operating procedures.</p>
+          </section>
+
+          <section class="legal-sec" id="authentication">
+            <h2>3. Authorized Access, Credentials &amp; welliID</h2>
+            <p>Institutional customers must ensure that all accounts provisioned for clinical personnel are authenticated using verified identities:</p>
+            <ul>
+              <li><strong>Practitioner Credentialing:</strong> Facilities must restrict clinical charting, prescription writing, and chart closure privileges exclusively to credentialed, actively licensed medical personnel.</li>
+              <li><strong>Multi-Factor Authentication:</strong> Account credentials and hardware security tokens must never be shared across shifts or individuals. Every digital signature is cryptographically bound to an individual practitioner profile via <code>welliID</code>.</li>
+              <li><strong>Immediate Revocation:</strong> Facilities must immediately revoke system access credentials upon departure, suspension, or change of role of any clinical or administrative personnel.</li>
+            </ul>
+          </section>
+
+          <section class="legal-sec" id="sla">
+            <h2>4. Service Level Commitments &amp; Offline Continuity</h2>
+            <p>Healthcare systems demand uncompromised reliability. Wellinovate commits to:</p>
+            <ul>
+              <li><strong>Target Availability:</strong> A 99.95% monthly uptime target for core cloud routing and synchronization services, excluding scheduled preventive maintenance windows announced at least 7 days in advance.</li>
+              <li><strong>Offline Resilience:</strong> In primary care clinics and secondary facilities with unstable grid connectivity, local Wellinovate edge units continue operating autonomously, storing consult notes, intake vitals, and diagnostic reads in local encrypted queues that sync atomically upon connection recovery.</li>
+              <li><strong>Incident Severity Protocol:</strong> Critical Sev-1 incidents impacting active patient triage or emergency care workflows trigger 24/7 priority emergency response within 15 minutes.</li>
+            </ul>
+          </section>
+
+          <section class="legal-sec" id="ip-rights">
+            <h2>5. Intellectual Property &amp; Clinical Data Ownership</h2>
+            <p>We maintain a strict separation between software proprietary rights and patient clinical record ownership:</p>
+            <ul>
+              <li><strong>Customer Health Data:</strong> The Customer and individual patients retain all right, title, and ownership interest in their Electronic Health Records, diagnostic imaging, and clinical charts. Wellinovate acquires no proprietary claims to patient health information.</li>
+              <li><strong>Wellinovate Technology:</strong> The underlying algorithms, user interface designs, design system tokens, firmware, neural models, documentation, and trade secrets remain the exclusive intellectual property of Wellinovate Ltd. and its licensors.</li>
+            </ul>
+          </section>
+
+          <section class="legal-sec" id="acceptable-use">
+            <h2>6. Acceptable Use &amp; Patient Safety Safeguards</h2>
+            <p>Users and healthcare institutions agree never to:</p>
+            <ul>
+              <li>Attempt to reverse-engineer, decompile, or extract firmware from proprietary diagnostic hardware interfaces.</li>
+              <li>Bypass or tamper with cryptographic clinical audit logs or timestamp mechanisms.</li>
+              <li>Input falsified clinical entries or intentionally manipulate diagnostic telemetry feeds.</li>
+              <li>Use the platform outside of its intended regulatory labeling, clinical guidelines, and certified use cases.</li>
+            </ul>
+          </section>
+
+          <section class="legal-sec" id="liability">
+            <h2>7. Limitation of Liability &amp; Indemnity</h2>
+            <p>To the fullest extent permissible by applicable law:</p>
+            <ul>
+              <li>Wellinovate shall not be liable for indirect, incidental, punitive, or consequential damages arising from clinical outcome disputes, facility power outages, or unauthorized third-party hardware modifications.</li>
+              <li>Healthcare institutions agree to indemnify and hold harmless Wellinovate and its directors, officers, and clinical advisory board against third-party claims arising from unauthorized medical practice, malpractice, or credential sharing by their personnel.</li>
+            </ul>
+          </section>
+
+          <section class="legal-sec" id="governing-law">
+            <h2>8. Governing Law &amp; Dispute Resolution</h2>
+            <p>These Terms shall be construed and governed in accordance with the laws of the jurisdiction specified in the applicable Institutional Service Agreement (defaulting to the Federal Republic of Nigeria for West African regional contracts, and the laws of England &amp; Wales for international enterprise contracts).</p>
+            <p>Any dispute or claim arising out of or in connection with these Terms shall first be referred to executive mediation, and if unresolved within 30 days, settled by final and binding arbitration under the Rules of the London Court of International Arbitration (LCIA) or the Lagos Court of Arbitration (LCA).</p>
+          </section>
+
+          <section class="legal-sec" id="legal-contact">
+            <h2>9. Institutional Contracting &amp; Legal Notices</h2>
+            <p>For institutional contracting inquiries, custom Business Associate Agreements (BAAs), or service notices:</p>
+            <ul>
+              <li><strong>Legal Counsel &amp; Contracts:</strong> <a href="mailto:legal@wellinovate.com">legal@wellinovate.com</a></li>
+              <li><strong>Enterprise &amp; Health Systems:</strong> <a href="mailto:partners@wellinovate.com">partners@wellinovate.com</a></li>
+              <li><strong>Registered Office:</strong> Wellinovate Ltd., Lagos · London · Global Remote</li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="sitefoot">
+      <hr class="rule-head">
+      <div class="footgrid">
+        <div class="brand-col">
+          <div class="foot-logo-lockup">
+            <img src="./assets/wellinovate-logo-mark.png" alt="Wellinovate Emblem" class="foot-logo-mark" width="44" height="44">
+            <span class="foot-brand-title"><span class="brand-well">WELL</span><span class="brand-inovate">INOVATE</span></span>
+          </div>
+          <p class="foot-tagline"><strong>Empowering Better Health Decisions</strong> <span class="tagline-gold">Through Innovation.</span></p>
+          <p>Digital infrastructure for a connected healthcare system — records, identity, care and diagnostics, joined as one.</p>
+          <div class="social">
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 256 256" fill="currentColor"><path opacity="0.2" d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Z"/><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 256 256" fill="currentColor"><path opacity="0.2" d="M224,128a96,96,0,1,1-112-94.8V128h32V80h32v16a16,16,0,0,1-16,16H144v16h32Z"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm12,177.52V152h20a8,8,0,0,0,0-16H140V112a8,8,0,0,1,8-8h16a8,8,0,0,0,0-16H148a24,24,0,0,0-24,24v24H100a8,8,0,0,0,0,16h24v49.52a88,88,0,1,1,16,0Z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 256 256" fill="currentColor"><rect opacity="0.2" x="40" y="40" width="176" height="176" rx="44"/><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM172,24H84A60.07,60.07,0,0,0,24,84v88a60.07,60.07,0,0,0,60,60h88a60.07,60.07,0,0,0,60-60V84A60.07,60.07,0,0,0,172,24Zm44,148a44.05,44.05,0,0,1-44,44H84a44.05,44.05,0,0,1-44-44V84A44.05,44.05,0,0,1,84,40h88a44.05,44.05,0,0,1,44,44ZM196,76a12,12,0,1,1-12-12A12,12,0,0,1,196,76Z"/></svg></a>
+            <a href="#" aria-label="X"><svg viewBox="0 0 256 256" fill="currentColor"><path opacity="0.2" d="M223.75,215.49,167.6,132.94,222,72.16A8,8,0,0,0,210,60.24l-51.72,58.47L124.2,64.43A8,8,0,0,0,117.5,60H40.25a8,8,0,0,0-6.61,12.51L89.79,155.06,35.36,215.84A8,8,0,0,0,47.36,227.76L99.08,169.29,132.6,219.57a8,8,0,0,0,6.7,3.63h77.25A8,8,0,0,0,223.75,215.49Z"/><path d="M223.75,215.49,167.6,132.94,222,72.16A8,8,0,1,0,210,60.24l-51.72,58.47L124.2,64.43A8,8,0,0,0,117.5,60H40.25a8,8,0,0,0-6.61,12.51L89.79,155.06,35.36,215.84A8,8,0,1,0,12,10.92L99.08,169.29,132.6,219.57a8,8,0,0,0,6.7,3.63h77.25a8,8,0,0,0,7.2-11.71ZM122.14,206,50.25,76h17.5l71.9,130Zm60.36,0-108-158h20l108,158Z"/></svg></a>
+          </div>
+        </div>
+        <div class="footcol">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./team.html">Team</a></li>
+            <li><a href="./process.html">Process</a></li>
+          </ul>
+        </div>
+        <div class="footcol">
+          <h5>Ecosystem</h5>
+          <ul>
+            <li><a href="./solutions.html">Solutions</a></li>
+            <li><a href="./solutions.html#wellirecord">welliRecord</a></li>
+            <li><a href="./solutions.html#welliid">welliID</a></li>
+          </ul>
+        </div>
+        <div class="footcol">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@wellinovate.com">hello@wellinovate.com</a></li>
+            <li><a href="./process.html#contact">Get in touch</a></li>
+            <li>Lagos · London · Remote</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footbottom">
+        <span>© 2026 Wellinovate Ltd. All rights reserved.</span>
+        <span><a href="./privacy.html">Privacy Policy</a> · <a href="./terms.html">Terms of Service</a></span>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="./_ds/broadsheet-33e1abc0-c76e-4efe-9cc0-1407cbd4a61e/_ds_bundle.js"></script>
+</body>
+</html>

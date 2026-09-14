@@ -14,6 +14,8 @@ export default defineConfig({
         solutions: resolve(__dirname, 'solutions.html'),
         team: resolve(__dirname, 'team.html'),
         process: resolve(__dirname, 'process.html'),
+        privacy: resolve(__dirname, 'privacy.html'),
+        terms: resolve(__dirname, 'terms.html'),
       },
     },
   },

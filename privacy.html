@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Wellinovate Healthcare Platform</title>
+  <meta name="description" content="Wellinovate's clinical data privacy policy, governance standards, and patient confidentiality protections under NDPA, GDPR, and HIPAA security guidelines.">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#008276">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Wellinovate">
+  <meta property="og:title" content="Privacy Policy — Wellinovate Healthcare Platform">
+  <meta property="og:description" content="Clinical data governance, patient confidentiality, and security standards across the Wellinovate ecosystem.">
+  <meta property="og:image" content="https://wellinovate.github.io/wellinovatepro/assets/og-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Wellinovate — Privacy Policy">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Privacy Policy — Wellinovate Healthcare Platform">
+  <meta name="twitter:description" content="Clinical data governance, patient confidentiality, and security standards across the Wellinovate ecosystem.">
+  <meta name="twitter:image" content="https://wellinovate.github.io/wellinovatepro/assets/og-preview.jpg">
+  <link rel="stylesheet" href="./styles/main.css">
+  <style>
+    .kicker{display:block;font-size:13px;line-height:var(--half);letter-spacing:.08em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 70%,transparent);margin:0 0 calc(var(--leading) - var(--half))}
+    .pagehead{padding:calc(3 * var(--leading)) 0 calc(1.5 * var(--leading))}
+    .pagehead h1{font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:clamp(34px,4.5vw,52px);line-height:1.15;letter-spacing:-0.02em;margin:0}
+    .pagehead .sub{font-size:17px;line-height:var(--leading);max-width:64ch;margin:calc(var(--leading) - 0.5em) 0 0;color:color-mix(in srgb,var(--color-text) 78%,transparent)}
+    .rule-head{height:5px;border:0;margin:0;border-top:2px solid var(--color-text);border-bottom:1px solid var(--color-text)}
+    .rule-cut{height:0;border:0;border-top:1px solid var(--color-text);margin:0}
+    .dateline{display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--half) var(--leading);margin:0;padding:var(--half) 0;font-size:13px;line-height:var(--half);letter-spacing:.08em;text-transform:uppercase;font-feature-settings:"pnum" 1;color:color-mix(in srgb,var(--color-text) 70%,transparent)}
+    
+    .legal-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3.2fr);gap:calc(2 * var(--leading)) clamp(24px,4vw,64px);padding:calc(2 * var(--leading)) 0 calc(3 * var(--leading))}
+    @media (max-width:880px){.legal-body{grid-template-columns:1fr}}
+
+    .legal-toc{position:sticky;top:calc(3 * var(--leading));align-self:start;border-left:2px solid var(--color-accent-300);padding-left:var(--space-3)}
+    .legal-toc h4{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--color-text);margin:0 0 var(--half)}
+    .legal-toc ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+    .legal-toc a{font-size:14px;color:color-mix(in srgb,var(--color-text) 75%,transparent);text-decoration:none;transition:color 0.15s ease}
+    .legal-toc a:hover{color:var(--color-accent-700)}
+
+    .legal-content{max-width:70ch}
+    .legal-sec{margin-bottom:calc(2.5 * var(--leading));scroll-margin-top:calc(3 * var(--leading))}
+    .legal-sec h2{font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:24px;line-height:var(--leading);letter-spacing:-0.01em;margin:0 0 var(--half);color:var(--color-text)}
+    .legal-sec p{font-size:15.5px;line-height:var(--leading);color:color-mix(in srgb,var(--color-text) 82%,transparent);margin:0 0 calc(var(--leading) - 0.5em)}
+    .legal-sec ul{margin:0 0 var(--leading);padding-left:20px;font-size:15px;line-height:var(--leading);color:color-mix(in srgb,var(--color-text) 82%,transparent)}
+    .legal-sec li{margin-bottom:6px}
+    .callout-box{background:var(--color-accent-100);border-left:3px solid var(--color-brand-teal);padding:var(--space-3);border-radius:0 var(--radius-sm,4px) var(--radius-sm,4px) 0;margin:calc(var(--leading) - 0.5em) 0 var(--leading)}
+    .callout-box p{margin:0;font-size:14.5px;line-height:1.55;color:var(--color-accent-900)}
+
+    .sitefoot{padding:calc(3 * var(--leading)) 0 max(calc(1.5 * var(--leading)),calc(1.5 * var(--leading)) + env(safe-area-inset-bottom,0px))}
+    .sitefoot .rule-head{margin-bottom:calc(1.5 * var(--leading))}
+    .footgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--leading) clamp(24px,4vw,64px)}
+    @media (max-width:820px){.footgrid{grid-template-columns:1fr 1fr}}
+    @media (max-width:480px){.footgrid{grid-template-columns:1fr}}
+    .footgrid .brand-col p{font-size:14.5px;line-height:var(--leading);color:color-mix(in srgb,var(--color-text) 78%,transparent);max-width:32ch;margin:calc(var(--half) - 0.5em) 0 0}
+    .footcol h5{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 60%,transparent);margin:0 0 var(--half)}
+    .footcol ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+    .footcol a{font-size:14.5px;color:var(--color-text);text-decoration:none}
+    .footcol a:hover{color:var(--color-accent-700)}
+    .footbottom{margin-top:calc(2 * var(--leading));padding-top:var(--half);border-top:1px solid color-mix(in srgb,var(--color-text) 15%,transparent);display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--half);font-size:13px;color:color-mix(in srgb,var(--color-text) 65%,transparent)}
+    .footbottom a{color:inherit;text-decoration:none}
+    .footbottom a:hover{color:var(--color-accent-700)}
+    .social{display:flex;gap:8px;margin-top:var(--leading)}
+    .social a{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:var(--radius-sm,4px);color:var(--color-text)}
+    .social a:hover{color:var(--color-accent-700);background:var(--color-accent-100)}
+    .social a:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}
+    .social svg{width:18px;height:18px}
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="main-navigation">
+    <a href="./index.html" class="nav-brand" aria-label="Wellinovate Home">
+      <img src="./assets/wellinovate-logo-mark.png" alt="Wellinovate Emblem" class="nav-logo-mark" width="38" height="38">
+      <div class="nav-brand-text">
+        <span class="nav-brand-title"><span class="brand-well">Well</span><span class="brand-inovate">inovate</span></span>
+        <span class="nav-brand-tagline">Empowering Better Health Decisions</span>
+      </div>
+    </a>
+    <a href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./solutions.html">Solutions</a>
+    <a href="./team.html">Team</a>
+    <a href="./process.html">Process &amp; Contact</a>
+    <a href="./process.html#contact" class="btn btn-primary" id="nav-cta-contact">Get in touch</a>
+  </nav>
+
+  <div class="wrap">
+    <main>
+      <section class="pagehead" data-screen-label="Privacy">
+        <span class="kicker">Clinical Data Governance</span>
+        <h1>Privacy Policy &amp; Health Data Stewardship</h1>
+        <p class="sub">How Wellinovate protects, encrypts, and handles clinical health records, provider data, and patient confidentiality across our integrated healthcare ecosystem.</p>
+      </section>
+
+      <hr class="rule-head">
+      <p class="dateline">
+        <span>Wellinovate Ltd. — Regulatory Compliance</span>
+        <span>Effective Date: September 14, 2026</span>
+        <span>Version 1.2 — Global Edition</span>
+      </p>
+      <hr class="rule-cut">
+
+      <div class="legal-body">
+        <aside class="legal-toc" aria-label="Table of Contents">
+          <h4>Table of Contents</h4>
+          <ul>
+            <li><a href="#introduction">1. Purpose &amp; Scope</a></li>
+            <li><a href="#data-collected">2. Information We Process</a></li>
+            <li><a href="#legal-basis">3. Legal Basis &amp; Consent</a></li>
+            <li><a href="#security">4. Clinical Security &amp; Encryption</a></li>
+            <li><a href="#sharing">5. Interoperability &amp; Sharing</a></li>
+            <li><a href="#patient-rights">6. Patient &amp; Provider Rights</a></li>
+            <li><a href="#retention">7. Retention &amp; Sovereignty</a></li>
+            <li><a href="#contact-dpo">8. DPO Contact Information</a></li>
+          </ul>
+        </aside>
+
+        <article class="legal-content">
+          <section class="legal-sec" id="introduction">
+            <h2>1. Purpose &amp; Scope</h2>
+            <p>Wellinovate Ltd. ("Wellinovate," "we," "us," or "our") develops connected clinical hardware, interoperable electronic health records (EHR), and diagnostic intelligence platforms. This Privacy Policy governs the processing of personal health information (PHI) and clinical telemetry across our eight core platforms: <strong>welliRecord</strong>, <strong>welliID</strong>, <strong>WelliCare</strong>, <strong>WelliPharm</strong>, <strong>WelliDiagnostic</strong>, <strong>WelliPay</strong>, <strong>WellISight</strong>, and <strong>WelliMate</strong>.</p>
+            <p>We treat health data as a sacred trust. Our infrastructure is engineered from first principles to prioritize patient confidentiality, clinical integrity, and institutional data sovereignty.</p>
+            <div class="callout-box">
+              <p><strong>Fundamental Principle:</strong> Wellinovate will never sell, monetize, or broker patient health data. Clinical records belong solely to patients and their authorized licensed care providers.</p>
+            </div>
+          </section>
+
+          <section class="legal-sec" id="data-collected">
+            <h2>2. Information We Process</h2>
+            <p>Depending on whether you are a patient, healthcare provider, clinical administrator, or partner institution, we may process:</p>
+            <ul>
+              <li><strong>Patient Identity &amp; Biometrics:</strong> Universal patient identifiers created via <code>welliID</code>, encrypted biometric facial/iris feature vectors (stored as non-reversible algorithmic hashes, never raw images), national identity reference numbers, and demographic details.</li>
+              <li><strong>Electronic Health Records (EHR):</strong> Clinical encounter notes, consultation summaries, vital signs, diagnostic laboratory values, medication prescription histories, allergy registers, and referral files managed through <code>welliRecord</code>.</li>
+              <li><strong>Connected Diagnostic Telemetry:</strong> Diagnostic device readings, ECG captures, ultrasound imaging streams, and point-of-care vital measurements gathered via <code>WelliDiagnostic</code> and validated clinical hardware.</li>
+              <li><strong>Provider Professional Credentials:</strong> Medical license numbers, specialty registrations, facility affiliations, and authenticated access tokens.</li>
+              <li><strong>Audit &amp; System Telemetry:</strong> Immutable cryptographic timestamps recording every chart opening, amendment, export, and prescription sign-off.</li>
+            </ul>
+          </section>
+
+          <section class="legal-sec" id="legal-basis">
+            <h2>3. Legal Basis &amp; Regulatory Alignment</h2>
+            <p>We operate under strict adherence to global and continental privacy regulations:</p>
+            <ul>
+              <li><strong>Nigeria Data Protection Act (NDPA 2023) &amp; NDPR:</strong> Compliance with statutory principles of lawful processing, privacy impact assessments, and data subject rights.</li>
+              <li><strong>UK &amp; EU General Data Protection Regulation (GDPR):</strong> Article 9 compliance governing special category health data for clinical treatment, diagnosis, and healthcare management.</li>
+              <li><strong>HIPAA Security &amp; Privacy Rules Alignment:</strong> Technical and administrative safeguards meeting or exceeding international healthcare security baselines.</li>
+            </ul>
+          </section>
+
+          <section class="legal-sec" id="security">
+            <h2>4. Clinical Security &amp; Encryption Standards</h2>
+            <p>Our security architecture adheres to zero-trust defense-in-depth principles:</p>
+            <ul>
+              <li><strong>Encryption in Transit:</strong> All data transmitted between clinical hardware, client applications, and cloud/edge infrastructure uses TLS 1.3 with Perfect Forward Secrecy.</li>
+              <li><strong>Encryption at Rest:</strong> All database volumes, object stores, and diagnostic cache layers are encrypted with AES-256 with keys managed through hardware security modules (HSM).</li>
+              <li><strong>Field-Level Encryption (FLE):</strong> Sensitive identifiers and clinical diagnostic markers are encrypted individually at the application layer prior to database insertion.</li>
+              <li><strong>Air-Gapped Local Clinical Continuity:</strong> In facilities experiencing grid or internet interruption, local nodes maintain cryptographic synchronization queues that verify integrity upon reconnect.</li>
+              <li><strong>Immutable Audit Logging:</strong> Every record view, export, modification, or transmission is recorded in a tamper-evident audit ledger compliant with clinical governance audits.</li>
+            </ul>
+          </section>
+
+          <section class="legal-sec" id="sharing">
+            <h2>5. Interoperability &amp; Authorized Data Sharing</h2>
+            <p>We share data exclusively within authorized clinical care pathways:</p>
+            <ul>
+              <li><strong>Direct Patient Care:</strong> Transfer of medical summaries between referring hospitals, specialist clinics, diagnostic laboratories, and pharmacy networks with explicit clinical consent.</li>
+              <li><strong>Open Interoperability Standards:</strong> System-to-system integrations are executed using standard HL7 FHIR (Fast Healthcare Interoperability Resources) REST APIs with scoped OAuth 2.0 authorizations.</li>
+              <li><strong>Statutory Health Reporting:</strong> In strictly bounded instances mandated by public health law (e.g., epidemic reporting of notifiable infectious diseases), anonymized statistical notifications are transmitted to accredited public health authorities.</li>
+            </ul>
+          </section>
+
+          <section class="legal-sec" id="patient-rights">
+            <h2>6. Patient &amp; Provider Rights</h2>
+            <p>Under applicable privacy law, individuals whose health data is managed within Wellinovate systems enjoy clear rights:</p>
+            <ul>
+              <li><strong>Right of Access:</strong> Patients may review their complete clinical history, lab results, and consultation notes via the patient-facing portal.</li>
+              <li><strong>Right to Rectification:</strong> Correction of erroneous personal details or addenda to medical records as governed by medical recordkeeping standards.</li>
+              <li><strong>Right to Data Portability:</strong> Complete export of your personal medical history in standard FHIR JSON or human-readable formats.</li>
+              <li><strong>Access Revocation:</strong> Revocation of secondary access privileges granted to family members, insurance providers, or research programs.</li>
+            </ul>
+          </section>
+
+          <section class="legal-sec" id="retention">
+            <h2>7. Data Retention &amp; Regional Sovereignty</h2>
+            <p>Clinical data retention periods are governed by statutory national medical recordkeeping mandates (typically 7 to 10 years following the last clinical encounter, or until the age of majority for pediatric records). Upon expiration of statutory periods, records are purged according to DoD 5220.22-M sanitization standards.</p>
+            <p>We respect national data sovereignty requirements by hosting regional health data within in-country cloud data centers or approved sovereign infrastructure.</p>
+          </section>
+
+          <section class="legal-sec" id="contact-dpo">
+            <h2>8. Data Protection Officer (DPO) Contact</h2>
+            <p>If you have questions regarding this Privacy Policy, wish to exercise your data subject rights, or need to lodge a clinical governance inquiry, contact our dedicated data protection office:</p>
+            <ul>
+              <li><strong>Data Protection Officer:</strong> <a href="mailto:dpo@wellinovate.com">dpo@wellinovate.com</a></li>
+              <li><strong>Privacy Inquiries:</strong> <a href="mailto:privacy@wellinovate.com">privacy@wellinovate.com</a></li>
+              <li><strong>Headquarters:</strong> Wellinovate Ltd., Lagos · London · Global Remote</li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="sitefoot">
+      <hr class="rule-head">
+      <div class="footgrid">
+        <div class="brand-col">
+          <div class="foot-logo-lockup">
+            <img src="./assets/wellinovate-logo-mark.png" alt="Wellinovate Emblem" class="foot-logo-mark" width="44" height="44">
+            <span class="foot-brand-title"><span class="brand-well">WELL</span><span class="brand-inovate">INOVATE</span></span>
+          </div>
+          <p class="foot-tagline"><strong>Empowering Better Health Decisions</strong> <span class="tagline-gold">Through Innovation.</span></p>
+          <p>Digital infrastructure for a connected healthcare system — records, identity, care and diagnostics, joined as one.</p>
+          <div class="social">
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 256 256" fill="currentColor"><path opacity="0.2" d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Z"/><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 256 256" fill="currentColor"><path opacity="0.2" d="M224,128a96,96,0,1,1-112-94.8V128h32V80h32v16a16,16,0,0,1-16,16H144v16h32Z"/><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm12,177.52V152h20a8,8,0,0,0,0-16H140V112a8,8,0,0,1,8-8h16a8,8,0,0,0,0-16H148a24,24,0,0,0-24,24v24H100a8,8,0,0,0,0,16h24v49.52a88,88,0,1,1,16,0Z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 256 256" fill="currentColor"><rect opacity="0.2" x="40" y="40" width="176" height="176" rx="44"/><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM172,24H84A60.07,60.07,0,0,0,24,84v88a60.07,60.07,0,0,0,60,60h88a60.07,60.07,0,0,0,60-60V84A60.07,60.07,0,0,0,172,24Zm44,148a44.05,44.05,0,0,1-44,44H84a44.05,44.05,0,0,1-44-44V84A44.05,44.05,0,0,1,84,40h88a44.05,44.05,0,0,1,44,44ZM196,76a12,12,0,1,1-12-12A12,12,0,0,1,196,76Z"/></svg></a>
+            <a href="#" aria-label="X"><svg viewBox="0 0 256 256" fill="currentColor"><path opacity="0.2" d="M223.75,215.49,167.6,132.94,222,72.16A8,8,0,0,0,210,60.24l-51.72,58.47L124.2,64.43A8,8,0,0,0,117.5,60H40.25a8,8,0,0,0-6.61,12.51L89.79,155.06,35.36,215.84A8,8,0,0,0,47.36,227.76L99.08,169.29,132.6,219.57a8,8,0,0,0,6.7,3.63h77.25A8,8,0,0,0,223.75,215.49Z"/><path d="M223.75,215.49,167.6,132.94,222,72.16A8,8,0,1,0,210,60.24l-51.72,58.47L124.2,64.43A8,8,0,0,0,117.5,60H40.25a8,8,0,0,0-6.61,12.51L89.79,155.06,35.36,215.84A8,8,0,1,0,12,10.92L99.08,169.29,132.6,219.57a8,8,0,0,0,6.7,3.63h77.25a8,8,0,0,0,7.2-11.71ZM122.14,206,50.25,76h17.5l71.9,130Zm60.36,0-108-158h20l108,158Z"/></svg></a>
+          </div>
+        </div>
+        <div class="footcol">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./team.html">Team</a></li>
+            <li><a href="./process.html">Process</a></li>
+          </ul>
+        </div>
+        <div class="footcol">
+          <h5>Ecosystem</h5>
+          <ul>
+            <li><a href="./solutions.html">Solutions</a></li>
+            <li><a href="./solutions.html#wellirecord">welliRecord</a></li>
+            <li><a href="./solutions.html#welliid">welliID</a></li>
+          </ul>
+        </div>
+        <div class="footcol">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@wellinovate.com">hello@wellinovate.com</a></li>
+            <li><a href="./process.html#contact">Get in touch</a></li>
+            <li>Lagos · London · Remote</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footbottom">
+        <span>© 2026 Wellinovate Ltd. All rights reserved.</span>
+        <span><a href="./privacy.html">Privacy Policy</a> · <a href="./terms.html">Terms of Service</a></span>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="./_ds/broadsheet-33e1abc0-c76e-4efe-9cc0-1407cbd4a61e/_ds_bundle.js"></script>
+</body>
+</html>
