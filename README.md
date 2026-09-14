@@ -48,6 +48,13 @@ Generates optimized static assets in the `dist/` directory.
 npm run preview
 ```
 
+### GitHub Pages Deployment
+The repository includes an automated GitHub Actions CI/CD workflow (`.github/workflows/deploy.yml`).
+To activate GitHub Pages on your repository:
+1. Go to **Settings → Pages** on GitHub.
+2. Under **Build and deployment → Source**, select **GitHub Actions**.
+3. Every push to `main` will automatically build and deploy the live site.
+
 ---
 
 ## 📁 Project Structure
