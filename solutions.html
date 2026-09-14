@@ -181,6 +181,13 @@
             <li>Structured history — visits, results and prescriptions in one timeline</li>
             <li>Built on the same identity layer as the rest of the ecosystem</li>
           </ul>
+          <div class="split-actions" style="margin-top: calc(var(--leading) - 0.25em); display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+            <button type="button" class="btn btn-primary" id="btn-open-simulator" data-action="open-simulator">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Launch Live Simulator
+            </button>
+            <span class="text-muted" style="font-size: 13px;">Test EHR intake &amp; welliID scan</span>
+          </div>
         </div>
         <figure class="split-figure">
           <div class="print">
@@ -202,6 +209,7 @@
           </div>
           <h5 class="card-title">welliID</h5>
           <p class="card-body">One verified, cryptographically-secure identity across every hospital, pharmacy, and clinic in the network.</p>
+          <button type="button" class="btn btn-ghost" data-action="open-simulator" style="align-self: flex-start; margin-top: auto; font-size: 12.5px; padding: 4px 0; font-weight: 600;">Test welliID in Simulator →</button>
         </div>
         <div class="card elev-sm" id="wellicare">
           <div class="card-head">
@@ -314,9 +322,148 @@
         <span><a href="./privacy.html">Privacy Policy</a> · <a href="./terms.html">Terms of Service</a></span>
       </div>
     </footer>
+  <!-- WelliRecord & WelliID Interactive Clinical Simulator Modal -->
+  <div id="clinical-simulator-modal" class="sim-modal" role="dialog" aria-modal="true" aria-labelledby="sim-modal-heading">
+    <div class="sim-dialog">
+      <!-- Top Header -->
+      <div class="sim-header">
+        <div class="sim-header-title">
+          <img src="./assets/wellinovate-logo-mark.png" alt="" width="26" height="26">
+          <h3 id="sim-modal-heading">WelliRecord™ &amp; WelliID™ Clinical Demonstration Console</h3>
+          <span class="sim-badge-live">Live Interoperability</span>
+        </div>
+        <button type="button" class="sim-close-btn" data-action="close-simulator" aria-label="Close Simulator">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <!-- Persona Selector Bar -->
+      <div class="sim-persona-bar">
+        <span class="sim-persona-label">Select Patient Persona:</span>
+        <button type="button" class="sim-persona-tab active" data-persona="amara">
+          <span>Amara Okafor</span>
+          <span class="tag tag-accent" style="font-size:10px;padding:1px 6px;">Antenatal Care</span>
+        </button>
+        <button type="button" class="sim-persona-tab" data-persona="babatunde">
+          <span>Babatunde Adeleke</span>
+          <span class="tag tag-accent-2" style="font-size:10px;padding:1px 6px;">Emergency Trauma</span>
+        </button>
+        <button type="button" class="sim-persona-tab" data-persona="chidinma">
+          <span>Chidinma Eze</span>
+          <span class="tag tag-neutral" style="font-size:10px;padding:1px 6px;">Chronic Care &amp; IoT</span>
+        </button>
+      </div>
+
+      <!-- Console Body: 2 Columns -->
+      <div class="sim-body">
+        <!-- Left Column: Patient Identity & Telemetry -->
+        <div class="sim-col-identity">
+          <div class="sim-patient-card">
+            <div class="sim-patient-header">
+              <div>
+                <h4 class="sim-patient-name" id="sim-patient-name">Amara Okafor</h4>
+                <div class="sim-patient-meta" id="sim-patient-meta">34 yrs • Female • Blood Group O+</div>
+              </div>
+              <span class="sim-patient-id-badge" id="sim-patient-id">WID-9824-771B</span>
+            </div>
+            <div class="sim-patient-condition" id="sim-patient-condition">Antenatal Care (32 Weeks) &amp; Routine Screen</div>
+            <div class="sim-allergies-box">
+              <span style="font-weight:600;color:var(--color-text);">Allergies:</span>
+              <div id="sim-patient-allergies" style="display:inline-flex;gap:4px;flex-wrap:wrap;"></div>
+            </div>
+          </div>
+
+          <!-- QR Verification Box -->
+          <div class="sim-qr-box">
+            <div class="sim-qr-visual">
+              <svg width="120" height="120" viewBox="0 0 33 33" shape-rendering="crispEdges" aria-label="WelliID Cryptographic QR Badge">
+                <path fill="#0E2B4C" d="M0 0h9v9H0zm2 2v5h5V2zm1 1h3v3H3zM24 0h9v9h-9zm2 2v5h5V2zm1 1h3v3h-3zM0 24h9v9H0zm2 2v5h5v-5zm1 1h3v3H3zM11 2h2v2h-2zm4 0h3v2h-3zm5 0h2v2h-2zm-9 4h2v2h-2zm4 0h1v4h-1zm3 0h2v2h-2zm2 0h2v4h-2zm-7 4h1v1h-1zm2 1h2v2h-2zm-5 2h3v1h-3zm6 0h2v2h-2zm4 0h2v2h-2zm3 0h3v2h-3zm-13 3h2v2h-2zm4 0h2v2h-2zm4 0h3v2h-3zm4 0h2v2h-2zm-12 3h2v2h-2zm4 0h1v3h-1zm3 0h2v1h-2zm2 0h2v2h-2zm3 0h2v1h-2zm-14 3h2v1h-2zm4 0h2v2h-2zm3 0h2v2h-2zm4 0h2v2h-2zm4 0h1v2h-1zm-15 3h1v2h-1zm3 0h2v1h-2zm3 0h2v2h-2zm4 0h2v1h-2zm4 0h2v2h-2zm2 0h2v1h-2zm-16 3h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h3v1h-3zm5 0h2v2h-2z"/>
+              </svg>
+              <div class="sim-qr-laser"></div>
+            </div>
+            <div class="sim-qr-subtext" id="sim-qr-subtext">WelliID Token: WID-9824-771B</div>
+            <div id="sim-scan-status" class="sim-status-banner pending">
+              Scan required to authorize biometric/EHR write transactions
+            </div>
+            <button type="button" class="btn btn-primary btn-block" id="sim-scan-btn" style="margin-top:10px;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7V5a2 2 0 0 1 2-2h2"></path><path d="M17 3h2a2 2 0 0 1 2 2v2"></path><path d="M21 17v2a2 2 0 0 1-2 2h-2"></path><path d="M7 21H5a2 2 0 0 1-2-2v-2"></path></svg>
+              Scan Patient Badge &amp; Verify Consent
+            </button>
+          </div>
+
+          <!-- Real-Time Telemetry Stream -->
+          <div class="sim-patient-card">
+            <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:color-mix(in srgb,var(--color-text) 60%,transparent);margin-bottom:8px;font-weight:600;display:flex;justify-content:space-between;">
+              <span>Live Clinical Telemetry</span>
+              <span style="color:#059669;">● Synchronized</span>
+            </div>
+            <div class="sim-vitals-grid">
+              <div class="sim-vital-card">
+                <div class="sim-vital-label">Heart Rate</div>
+                <div class="sim-vital-val" id="sim-vital-hr">76 bpm</div>
+              </div>
+              <div class="sim-vital-card">
+                <div class="sim-vital-label">Blood Press.</div>
+                <div class="sim-vital-val" id="sim-vital-bp">116/74</div>
+              </div>
+              <div class="sim-vital-card">
+                <div class="sim-vital-label">SpO2</div>
+                <div class="sim-vital-val" id="sim-vital-spo2">99%</div>
+              </div>
+              <div class="sim-vital-card">
+                <div class="sim-vital-label">Temp</div>
+                <div class="sim-vital-val" id="sim-vital-temp">36.6 °C</div>
+              </div>
+              <div class="sim-vital-card" style="grid-column: span 2;">
+                <div class="sim-vital-label">Blood Glucose</div>
+                <div class="sim-vital-val" id="sim-vital-gluc">88 mg/dL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Unified Electronic Health Record Timeline -->
+        <div class="sim-col-records">
+          <div class="sim-timeline-header">
+            <div>
+              <h4 style="font-family:var(--font-heading);font-size:18px;margin:0;color:var(--color-brand-navy);">Unified Health Record (welliRecord)</h4>
+              <span style="font-size:12px;color:color-mix(in srgb,var(--color-text) 65%,transparent);">Cross-facility longitudinal health history with zero duplicate entries</span>
+            </div>
+            <span class="tag tag-accent" style="font-family:ui-monospace,Menlo,monospace;">HL7 / FHIR R4 Ready</span>
+          </div>
+
+          <!-- Action Box: Append Clinical Note -->
+          <div class="sim-action-box">
+            <div class="sim-action-head">
+              <span>Attending Physician Clinical Order Entry</span>
+              <span class="text-muted" style="font-size:11px;font-weight:normal;">Realtime Chain Consensus</span>
+            </div>
+            <div class="sim-preset-pills">
+              <span class="sim-preset-pill">Administer Tetanus Toxoid Booster (0.5 mL IM)</span>
+              <span class="sim-preset-pill">Order Emergency Non-Contrast Head CT</span>
+              <span class="sim-preset-pill">Prescribe Metformin 500mg BID with meals</span>
+              <span class="sim-preset-pill">Refer to Fetal Maternal Medicine Unit</span>
+            </div>
+            <div class="sim-action-input-row">
+              <input type="text" id="sim-note-input" class="input" placeholder="Type encounter note, diagnosis, or medication order..." style="font-size:13px;">
+              <button type="button" class="btn btn-primary" id="sim-add-note-btn" style="white-space:nowrap;padding:6px 14px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                Append to Record
+              </button>
+            </div>
+          </div>
+
+          <!-- Timeline Container -->
+          <div class="sim-timeline-list" id="sim-timeline-list">
+            <!-- Dynamically populated by simulator.js -->
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script type="module" src="./_ds/broadsheet-33e1abc0-c76e-4efe-9cc0-1407cbd4a61e/_ds_bundle.js"></script>
   <script type="module" src="./pwa-init.js"></script>
+  <script type="module" src="./simulator.js"></script>
 </body>
 </html>
