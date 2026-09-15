@@ -1,5 +1,5 @@
 // Wellinovate Clinical Continuity Offline Service Worker
-const CACHE_NAME = 'wellinovate-offline-v9';
+const CACHE_NAME = 'wellinovate-offline-v10';
 
 const CORE_ASSETS = [
   './',

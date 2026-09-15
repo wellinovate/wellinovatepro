@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wellinovate.github.io/wellinovatepro/sitemap.xml
+Sitemap: https://www.wellinovate.com/sitemap.xml
