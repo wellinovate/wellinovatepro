@@ -1029,4 +1029,83 @@ figure.cmyk,
   to { transform: rotate(360deg); }
 }
 
+/* ==============================================================================
+   Proprietary Content Protection / Anti-Copy Framework
+   ============================================================================== */
+
+/* Disable text selection across editorial and presentation content */
+body,
+h1, h2, h3, h4, h5, h6,
+p, span, a, li, blockquote, figcaption,
+.kicker, .sub, .role, .bio, .bd, .collective-card, .footgrid,
+.nav, .hero, .person, .board, .problem, .products, .how {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* Explicitly preserve interaction for form inputs, textareas, and interactive tools */
+input,
+textarea,
+select,
+option,
+button,
+[contenteditable="true"],
+.allow-select,
+.sim-console,
+.sim-event-card {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+
+/* Prevent image dragging and non-interactive extraction */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  pointer-events: auto;
+}
+
+/* Content Protection Toast Notification */
+.content-protect-toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--color-brand-navy, #0e2b4c);
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-family: var(--font-ui, system-ui, sans-serif);
+  font-size: 13.5px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 12px 32px rgba(14, 43, 76, 0.28), 0 2px 8px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(237, 168, 34, 0.35);
+  z-index: 999999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.25s;
+}
+
+.content-protect-toast.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.content-protect-toast svg {
+  color: var(--color-brand-gold, #eda822);
+  flex-shrink: 0;
+}
+
 
