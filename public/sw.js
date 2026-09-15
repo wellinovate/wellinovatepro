@@ -1,5 +1,5 @@
 // Wellinovate Clinical Continuity Offline Service Worker
-const CACHE_NAME = 'wellinovate-offline-v5';
+const CACHE_NAME = 'wellinovate-offline-v6';
 
 const CORE_ASSETS = [
   './',
@@ -24,7 +24,7 @@ const CORE_ASSETS = [
   './assets/team-office.jpg',
   './assets/chibuike-nwogha.jpg',
   './assets/david-okafor.jpg',
-  './assets/ngozi-bello.jpg'
+  './assets/chidiebere-nwokeocha.jpg'
 ];
 
 // Install: Cache all core platform assets
