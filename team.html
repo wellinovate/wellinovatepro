@@ -53,15 +53,17 @@
         },
         {
           "@type": "Person",
-          "name": "David Okafor",
-          "jobTitle": "Co-Founder & CTO",
-          "image": "https://www.wellinovate.com/assets/david-okafor.jpg",
+          "name": "Dr. Chile Ogugua",
+          "jobTitle": "Chief Operating Officer and CEO Wellinovate UK",
+          "honorificSuffix": "MBBS, DTMH, MD (Geriatric Medicine), FRSM, FRSPH, FRSTMH, FRSA, MAcadMED, MACP",
+          "image": "https://www.wellinovate.com/assets/chile-ogugua.jpg",
           "worksFor": {"@type": "Organization", "name": "Wellinovate"}
         },
         {
           "@type": "Person",
           "name": "Dr. Chidiebere Nwokeocha",
           "jobTitle": "Chief Medical Officer",
+          "honorificSuffix": "MBBS, MSc Public Health (UK)",
           "image": "https://www.wellinovate.com/assets/chidiebere-nwokeocha-cmo.jpg",
           "worksFor": {"@type": "Organization", "name": "Wellinovate"}
         }
@@ -85,9 +87,12 @@
     .person .photo img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;transition:transform .4s ease}
     .person:hover .photo img{transform:scale(1.025)}
     .person h3{font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:24px;line-height:1.2;margin:0 0 4px;color:var(--color-navy-900,#0E2B4C)}
+    .person .credentials{font-size:11px;line-height:1.45;color:var(--color-navy-900,#0E2B4C);font-weight:600;letter-spacing:0.02em;margin:0 0 8px;font-family:ui-monospace,Menlo,Consolas,monospace}
     .person .role{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--color-accent-700);font-weight:600;margin:0 0 8px}
     .person-focus{display:inline-block;font-size:11.5px;font-family:var(--font-ui);letter-spacing:.02em;padding:3px 10px;border-radius:20px;background:color-mix(in srgb,var(--color-accent-700) 10%,transparent);color:var(--color-accent-700);font-weight:500;margin-bottom:12px;align-self:flex-start}
-    .person .bio{font-size:14.5px;line-height:1.55;color:color-mix(in srgb,var(--color-text) 82%,transparent);margin:0 0 16px;flex-grow:1}
+    .person .bio{font-size:14px;line-height:1.55;color:color-mix(in srgb,var(--color-text) 82%,transparent);margin:0 0 16px;flex-grow:1}
+    .person .bio p{margin:0 0 10px}
+    .person .bio p:last-child{margin-bottom:0}
     .person-contact{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--color-navy-900,#0E2B4C);text-decoration:none;border-bottom:1px solid transparent;transition:color .15s,border-color .15s;margin-top:auto}
     .person-contact:hover{color:var(--color-accent-700);border-bottom-color:var(--color-accent-700)}
 
@@ -177,14 +182,22 @@
         <div class="person">
           <figure>
             <div class="photo">
-              <img src="./assets/david-okafor.jpg" alt="Portrait of David Okafor, Co-Founder &amp; CTO" width="400" height="400" loading="eager">
+              <img src="./assets/chile-ogugua.jpg" alt="Portrait of Dr. Chile Ogugua, Chief Operating Officer and CEO Wellinovate UK" width="400" height="400" loading="eager">
             </div>
           </figure>
-          <h3>David Okafor</h3>
-          <p class="role">Co-Founder &amp; CTO</p>
-          <span class="person-focus">Interoperability &amp; FHIR Architecture</span>
-          <p class="bio">Built federated patient identity and distributed health data backbones across national healthcare initiatives. Architect of WelliRecord™, WelliID™, and open FHIR APIs enabling zero-data-loss patient transitions between clinical facilities.</p>
-          <a href="./process.html#contact" class="person-contact">Contact Engineering Desk →</a>
+          <h3>Dr. Chile Ogugua</h3>
+          <div class="credentials">MBBS, DTMH, MD (Geriatric Medicine), FRSM, FRSPH, FRSTMH, FRSA, MAcadMED, MACP</div>
+          <p class="role">Chief Operating Officer and CEO Wellinovate UK</p>
+          <span class="person-focus">UK Operations, Geriatric Medicine &amp; Healthy Ageing</span>
+          <div class="bio">
+            <p>I am a consultant physician and geriatrician with primary medical education in Nigeria, and extensive postgraduate training and experiences in United Kingdom, Europe and USA.</p>
+            <p>My field of expertise includes geriatric medicine and medical gerontology, covering comprehensive geriatric assessment of frail older adults, falls, functional decline, fragility fractures, osteoporosis, delirium, dementias and neurodegenerative disorders, geriatric oncology, clinical audits and research, with focus on healthy ageing, lifestyle and functional health, longevity medicine and medical education.</p>
+            <p>I am also involved in rehabilitation medicine, advance care planning and proactive palliative care for the terminally ill elderly folks. I have also been involved in infectious diseases, public health, tropical medicine and hygiene. My experiences also extend to Telemedicine and Digital health.</p>
+            <p>I have professional affiliations, including membership and fellowships with medical colleges, societies and academies in Nigeria, Europe and USA.</p>
+            <p>I am a community leader, medical educator and investor, with active interests in education, and health, including digital health and telemedicine.</p>
+            <p>CHILE OGUGUA and VIRGYKEM foundations have been actively involved in supporting medical education and providing grants for students with interests in fintechs, start ups and disruptive technologies in collaboration with Tekedia institute and other tertiary institutions.</p>
+          </div>
+          <a href="./process.html#contact" class="person-contact">Contact UK Executive Office →</a>
         </div>
 
         <div class="person">
@@ -194,9 +207,13 @@
             </div>
           </figure>
           <h3>Dr. Chidiebere Nwokeocha</h3>
+          <div class="credentials">MBBS, MSc Public Health (UK)</div>
           <p class="role">Chief Medical Officer</p>
-          <span class="person-focus">Clinical Safety &amp; Medical Informatics</span>
-          <p class="bio">Practicing consultant physician and clinical governance director. Directs multi-facility clinical validation trials, medical safety protocols, and evidence-based diagnostic support guardrails across every platform solution before enterprise healthcare deployment.</p>
+          <span class="person-focus">Medical Doctor | Regenerative Medicine Research</span>
+          <div class="bio">
+            <p>Dr Chidiebere Nwokeocha is a medical doctor with an MBBS and a UK MSc in Public Health.</p>
+            <p>His interests include regenerative medicine research and the development of a health ecosystem that supports accurate patient information management, clinical review and continuity of care.</p>
+          </div>
           <a href="./process.html#contact" class="person-contact">Contact Clinical Desk →</a>
         </div>
       </section>

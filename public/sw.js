@@ -23,7 +23,7 @@ const CORE_ASSETS = [
   './assets/wellirecord-device.jpg',
   './assets/team-office.jpg',
   './assets/chibuike-nwogha.jpg',
-  './assets/david-okafor.jpg',
+  './assets/chile-ogugua.jpg',
   './assets/chidiebere-nwokeocha-cmo.jpg'
 ];
 
