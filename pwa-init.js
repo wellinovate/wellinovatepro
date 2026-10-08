@@ -1,3 +1,5 @@
+import './analytics.js';
+
 // Wellinovate PWA Registration & Offline Continuity Monitor
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
