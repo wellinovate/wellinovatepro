@@ -90,9 +90,16 @@
     .teaser .card{position:relative}
     .teaser .card-num{position:absolute;top:var(--space-3);right:var(--space-3);font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:13px;color:color-mix(in srgb,var(--color-text) 40%,transparent);font-feature-settings:"pnum" 1}
     .teaser .card h3{font-size:15.5px;line-height:var(--half);text-transform:uppercase;letter-spacing:.04em;color:var(--color-accent-700);margin:0 0 8px}
+    .kicker{display:block;font-size:13px;line-height:var(--half);letter-spacing:.08em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 70%,transparent);margin:0 0 calc(var(--leading) - var(--half))}
     .spotlight{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--leading) clamp(24px,5vw,96px);align-items:center;padding:0 0 calc(2.5 * var(--leading));border-top:1px solid color-mix(in srgb,var(--color-text) 15%,transparent)}
     @media (max-width:720px){.spotlight{grid-template-columns:1fr}.spotlight-figure{order:-1}}
     .spotlight-title{font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:30px;line-height:calc(1.5 * var(--leading));letter-spacing:-0.015em;margin:0}
+    .spotlight-title-link{color:inherit;text-decoration:none;transition:color .18s ease}
+    .spotlight-title-link:hover{color:var(--color-accent)}
+    .spotlight-title-link .ext-arrow{font-size:.72em;opacity:.55;display:inline-block;transition:transform .18s ease,opacity .18s ease;margin-left:4px}
+    .spotlight-title-link:hover .ext-arrow{transform:translate(2px,-2px);opacity:1;color:var(--color-accent)}
+    .spotlight-figure .print a{transition:opacity .2s ease;display:block;width:100%;height:100%}
+    .spotlight-figure .print a:hover{opacity:.95}
     .spotlight-copy .note{font-size:15.5px;line-height:var(--leading);color:color-mix(in srgb,var(--color-text) 78%,transparent);margin:calc(var(--leading) - 0.5em) 0 0;max-width:48ch}
     .spotlight-figure{margin:0}
     .spotlight-figure.cmyk{overflow:visible}
@@ -203,22 +210,38 @@
         </div>
       </section>
 
-      <section class="spotlight">
+      <section class="spotlight" id="flagship-wellirecord">
         <div class="spotlight-copy">
-          <span class="kicker">Flagship</span>
-          <h2 class="spotlight-title">welliRecord — one record, for life</h2>
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:calc(var(--leading) - var(--half)); flex-wrap:wrap;">
+            <span class="kicker" style="margin:0;">Flagship Platform</span>
+            <a href="https://www.wellirecord.com/" target="_blank" rel="noopener noreferrer" class="tag tag-accent" style="text-decoration:none; font-weight:600; font-size:12px; padding:3px 9px; display:inline-flex; align-items:center; gap:5px;" title="Open WelliRecord website (www.wellirecord.com)">
+              <span>wellirecord.com</span>
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+          <h2 class="spotlight-title">
+            <a href="https://www.wellirecord.com/" target="_blank" rel="noopener noreferrer" class="spotlight-title-link" title="Visit welliRecord — https://www.wellirecord.com/">
+              welliRecord — one record, for life <span class="ext-arrow" aria-hidden="true">↗</span>
+            </a>
+          </h2>
           <p class="note">A patient-centered digital health record that follows the person, not the provider — every visit, result and prescription in one place, shareable with a consent, never a fax.</p>
           <div class="row" style="margin-top:var(--leading); display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
-            <button type="button" class="btn btn-primary" id="home-open-simulator" data-action="open-simulator">
+            <a href="https://www.wellirecord.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="home-visit-wellirecord">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              Visit welliRecord.com ↗
+            </a>
+            <button type="button" class="btn btn-secondary" id="home-open-simulator" data-action="open-simulator">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
               Launch Live Simulator
             </button>
-            <a href="./solutions.html" class="btn btn-secondary">See the full ecosystem →</a>
+            <a href="./solutions.html#wellirecord" class="btn btn-ghost">Ecosystem Details →</a>
           </div>
         </div>
         <figure class="spotlight-figure">
           <div class="print">
-            <img src="./assets/wellirecord-how-it-works.jpg" alt="How WelliRecord works diagram connecting clinics, physicians, patients, and emergency care" width="1024" height="1024" loading="eager">
+            <a href="https://www.wellirecord.com/" target="_blank" rel="noopener noreferrer" title="Visit WelliRecord (www.wellirecord.com)" style="display:block; width:100%; height:100%;">
+              <img src="./assets/wellirecord-how-it-works.jpg" alt="How WelliRecord works diagram connecting clinics, physicians, patients, and emergency care — Click to visit wellirecord.com" width="1024" height="1024" loading="eager">
+            </a>
           </div>
         </figure>
       </section>
